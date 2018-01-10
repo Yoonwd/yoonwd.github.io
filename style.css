@@ -1,7 +1,7 @@
 :root {
     --container-bg-color: #333;
     --left-bg-color: rgba(39, 223, 146, 0.7);
-    --left-button-hover-color: rgba(161, 11, 11, 0.3);
+    --left-button-hover-color: rgba(7, 185, 162, 0.3);
     --right-bg-color: rgba(43, 43, 43, 0.8);
     --right-button-hover-color: rgba(92, 92, 92, 0.3);
     --hover-width: 75%;
