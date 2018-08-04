@@ -4,20 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="split left">
-            <h1>The Blog</h1>
-            <a href="#" class="button">Read More</a>
+    <!-- Header Showcase -->
+    <header id="showcase" class="grid">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+            <h1>KIM JUNG YOON</h1>
+            <p>PORTFOLIO</p>
+            <a href="#introduce" class="btn-top sliding-link">Read More</a>
         </div>
-        <div class="split right">
-            <h1>The Portfolio</h1>
-            <a href="#" class="button">Read More</a>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a class="scroll" href="#showcase">Home</a>
+            <a class="scroll" href="#portfolio">Portfolio</a>
+            <a class="scroll" href="#skill">Skill</a>
+            <a class="scroll" href="#contact">Contact</a>
         </div>
-    </div>
-    <script src="main.js"></script>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+    </nav>
+
+    <!-- Main Area -->
+    <main id="main">
+        <!-- Section A -->
+        <section id="introduce" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Welcome!!</h2>
+                <div class="content-text">
+                    <p>
+                        안녕하세요. <br> 저의 포트폴리오 사이트에 오신 것을 환영합니다. <br>
+                        저는 기획에서 개발까지 사용자의 경험을 고려하여 <br> 사이트를 제작하기 위해 고민합니다. <br>
+                        급변하는 IT 환경속에서 항상 공부하며 발전하는 UI 개발자가 되고 싶습니다. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section B -->
+        <div class="card">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <section id="portfolio" class="grid">
+            <ul>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">포트폴리오 1</h3>
+                            <p>Lorem ipsum </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">포트폴리오 2</h3>
+                            <p>Lorem ipsum </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">포트폴리오 3</h3>
+                            <p>Lorem ipsum </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section C -->
+        <section id="work-process" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">WORK PROCESS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+            </div>
+        </section>
+
+        <!-- SKILL -->
+        
+        <section id="skill">
+            <div class="card title-skill">
+                <h2>SKILL</h2>
+            </div>
+            <ul class="flex">
+                <li>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">HTML/CSS</h3>
+                            <p>HTML5/CSS3 를 통해 웹표준 사이트를 제작합니다. </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">JAVASCRIPT</h3>
+                            <p>화살표 함수 등 ES6 의 기본을 학습하고 실력을 향상 중입니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">JQUERY</h3>
+                            <p>플러그인을 사이트에 적용하고 수정할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">반응형 웹</h3>
+                            <p>CSS의 강력한 기능인 grid,flex를 활용해 반응형 웹을 제작할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">ENGLISH</h3>
+                            <p>영어로 작성된 기술문서를 읽고 프로젝트에 적용 할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">기타</h3>
+                            <p> 리액트의 기본을 학습하였고 프론트 개발 동향을 파악하고 있습니다.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section D -->
+        <section id="contact" class="grid">
+            <div class="box">
+                <h2 class="content-title">Contact</h2>
+                <p>궁금하신 점이 있다면 문의 주세요!</p>
+                <p>yoonwdwd@gmail.com</p>
+            </div>
+            <div class="box">
+                <h2 class="content-title">About Me</h2>
+                <p>이름 : 김정윤 <br>
+                    <br>
+                   취미 : 기타연주, 보드타기 <br>     
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="grid">
+        <div>KJY's Portpolio</div>
+        <div>Project By <a href="http://yoonwd.github.io" target="_blank">Kim jung yoon</a></div>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
