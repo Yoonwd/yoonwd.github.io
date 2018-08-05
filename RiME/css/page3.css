@@ -1,0 +1,84 @@
+@font-face{font-family:'UglyQua'; src:url(../font/UglyQua.ttf) format('truetype');}
+
+/*reset--------------------------------------------------*/
+*{padding:0; margin:0;}
+ol,ul{list-style:none;}
+a{text-decoration:none; color:black;}
+em,b,i{font-style:normal;}
+
+
+
+/*body----------------------------------------------------------------------*/
+.page_background {background:url(../img/page3bg.PNG); background-size:100% 100%; /*background:url(../img/land.png)bottom no-repeat/100%, url(../img/sky.jpg);*/ padding-bottom: 100px;}
+body{min-width:900px; max-width:1920px;}
+.wrap {width: 90%; height: auto; max-width: 1600px; margin: 0 auto; line-height: 1.5;}
+
+
+
+/*Top contents*/
+.top{width:100%; height:300px; position:relative;}
+.top .logo{position:absolute; margin-top:130px;}
+.top .toggle{margin-top:130px; float:right; cursor:pointer;}
+.top .toggle span img{width: 45px;filter:drop-shadow(3px 3px 0 rgba(48,118,200,.8));}
+.top>img{width:120%; height:auto; position:absolute;}
+
+
+
+/*Side nav*/
+.sidenav{height:100%; width:0; position:fixed; z-index:999; top:0; right:0; background-color:white; overflow-x:hidden; padding-top:60px; transition:0.5s;}
+.sidenav a, .sidenav p{padding:10px 8px 8px 80px; text-decoration:none; font-size:25px; display:block; transition:0.3s; font-family:'UglyQua'; color:#1a456f;}
+.sidenav p{margin-top:60px; margin-bottom:-10px;}
+.sidenav .hr{max-width:75%; height:auto; float:right; margin:15px 30px 10px 15px;}
+.sidenav a:hover, .offcanvas a:focus{color:#F3EFB0;}
+.sidenav .closebtn{position:absolute; top:-30px; right:25px; font-size:70px; margin-left:50px;}
+@media screen and (max-height: 450px) {
+    .sidenav{padding-top:15px;}
+    .sidenav a{font-size:18px;}
+}
+
+
+
+/*container----------------------------------------------------*/
+.container {width: 100%; height: 1400px;}
+.container .title h1 {padding-left: 50px;font-family: 'UglyQua' ;margin-top: 40px; margin-bottom: 40px; font-size: 40px; color: white;     text-shadow: 2px 2px 0 rgba(48,118,200,.8);}
+.content {float: left; width: 72%;}
+
+
+
+/*container post_article------------------------------------------*/
+.content .post_article {width: 680px; height: 290px;padding: 25px 35px 25px 45px; background-image: url(../img/post_bg.png);background-size:100% 100%; background-repeat: no-repeat; margin-left: 20px; margin-bottom: 30px;}
+.post_article .time {display: block; padding-bottom: 0px;text-align: right; color: #a3a3a3; font-size: 13px;}
+
+.content .post_article .title_post a {text-decoration: none;}
+.content .post_article .title_post h2 {font-family: 'UglyQua';font-size: 30px; font-weight: bold; padding-bottom: 20px; color: #145389;}
+.content_post .image_box {float: left;}
+.content_post .image_box img {width: 265px; height: auto; transition:all 0.2s;}
+.content_post .image_box img:hover{opacity:0.8;}
+.content_post .text_box {float: right; width: 390px; padding-top: 10px; ;padding-right: 10px; font-size: 15px;}
+
+
+
+/*page_navi-------------------------------------------------------*/
+.page_navi {text-align: center; }
+.page_navi .arrow_box_l,.page_navi .arrow_box_r {position: relative; display: inline-block; top: 10px }
+.page_navi .page_number {display: inline-block;}
+.page_navi .page_number a {font-family: 'UglyQua';color:white; text-shadow: 2px 2px 0 rgba(48,118,200,.8); font-size: 30px;}
+.page_navi>a {display: inline-block;}
+.page_navi a img {margin-top: 10px;}
+
+
+
+/*sidebar-------------------------------------------------------*/
+.sidebar {float: right; width: 25%;}
+.sidebar .sidebar_box {width: 200px; height: 355px;padding: 45px 25px 25px 45px; background-image: url(../img/side_bg.png); background-size: 100% 100%; background-repeat: no-repeat; margin-bottom: 30px; }
+.sidebar .sidebar_box h1 {font-family: 'UglyQua';font-size: 25px; margin-bottom: 20px; color: #145389;}
+.sidebar .sidebar_box li {border-bottom: 1px solid rgba(0,0,0,0.05); padding:10px 0; transition:all 0.2s; font-size: 14px;}
+.sidebar .sidebar_box li:hover{opacity:0.4;}
+
+
+
+/*footer------------------------------------------------------*/
+.footer{width:100%; height:50px; background:black;}
+.footer .footer-wrap{width:100%;text-align: center;}
+.footer .footer-wrap img{width:auto; height:30px; padding:10px;}
+.footer .footer-wrap p{color:#fff; font-size:15px; display:inline-block; position:absolute; line-height:50px; right: 10px;}

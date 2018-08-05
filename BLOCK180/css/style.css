@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Jomhuria');
+
+html, body {
+    font-family: 'Poppins', 'Nanum Gothic', sans-serif;
+    color:#222;
+  }
+
+
+/* 헤더 영역 */
+
+.nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* 슬라이드 영역 */
+
+.carousel {
+    height: 700px;
+    margin-top: 3rem;
+    margin-bottom: .1rem;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h5 {
+    font-size: 15vh;
+    text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption p {
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.page-footer {
+    background-color: #222
+}
+
+/* 푸터 영역 */
+footer {
+    background-color: #3f3f3f;
+    color:#d5d5d5;
+    padding-top: 2rem;
+}
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width:40%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+footer h5 {
+    line-height: normal;
+}
+footer .col-12 h5 {
+    margin-bottom: 1rem;
+}
+.col-md-4.logo img {
+    width: 15vw;
+}
+
+
+
+/* share pages */
+
+.about, .menu, .store {
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+.about h1, .menu h1, .store h1 {
+    font-family: 'Jomhuria', cursive;
+}
+.about hr, .menu hr, .store hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 3rem;
+}
+
+/* about page only */
+.text.col-12 p {
+    font-size: 1.5rem;
+    margin:0 auto;
+    margin-top: 3rem;
+    width:70%;
+}
+
+.row.icon {
+    width: 40%;
+    margin:0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.row.icon img {
+    width: 4vw;
+}
+
+.row.pics {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.row.pics .col-md-4 img {
+    width: 20vw;
+}
+
+/* menu page only */
+.menu .card {
+    border: 0;
+}
+.menu .card p {
+    margin-bottom: 1rem;
+}
+.menu-line {
+    width: 60%;
+}
+.menu-line img:hover {
+    opacity: .5;
+}
+
+
+/* store page only*/
+.store img {
+    width: 100%;
+}
+.store .adress-line {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.store span {
+    display: inline-block;
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: #d5d5d5;
+}
+
+iframe {
+    width: 70vw;
+    height: 50vh;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    .carousel {
+        height: auto;
+    }
+    .carousel-caption h5 {
+        font-size: 10vh;
+        text-shadow: 1px 1px 15px #000;
+    }
+    
+    .carousel-caption p {
+        font-size: 2rem;
+        text-shadow: 1px 1px 5px #000;
+    }
+    .col-md-4.logo img {
+        width: 20vw;
+    }
+    .row.icon img {
+        width: 7vw;
+    }
+    .store img {
+        margin-bottom: 3rem
+    }
+    .menu-line {
+        width: 95%;
+    }
+    }
+@media (max-width: 768px) {
+    .row.pics .col-md-4 img {
+        width: 40vw;
+        margin-bottom: 2rem;
+    }
+    .row.icon img {
+        width: 10vw;
+    }
+   
+  }
+@media (max-width: 576px) {
+    .text.col-12 p {
+        font-size: 1rem;
+    }
+    .row.icon img {
+        width: 14vw;
+    }
+    
+  }
+
+
+ /* 애니메이션 */
+ @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+    }
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+  
+  .carousel-inner .carousel-item > img {
+    -webkit-animation: zoom 30s;
+    animation: zoom 30s;
+  }
