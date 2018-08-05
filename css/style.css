@@ -98,13 +98,16 @@ body {
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 18px;
   color: #555;
   display: block;
   transition: 0.3s;
   padding: 30px;
+ }
+
+ .sidenav a:nth-child(2) {
+   margin-top: 50px;
  }
  
  .sidenav a:hover,
@@ -140,8 +143,13 @@ nav span:hover {
     padding-bottom: 2em;
   }
 
+  #introduce h2 {
+    margin-top: 20px; 
+  }
+
   #introduce p {
     color: #666;
+    word-break: keep-all;
   }
   
   /* Portfolio */
@@ -426,6 +434,10 @@ svg rect {
 
   #skill ul li {
     width: 31%;
+  }
+
+  .sidenav a:nth-child(2) {
+    margin-top: 20px;
   }
 
   .closebtn {
