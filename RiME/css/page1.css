@@ -44,10 +44,11 @@ body{min-width:900px; max-width:1920px;}
 .aboutrime .wrap .acco-wrap .acco .acco4{background:url(../img/acco4.png) no-repeat; background-size:100%}
 .aboutrime .wrap .acco-wrap .acco .accob{width:100%; height:100%; position:relative; border:none; outline:none; z-index:10;}
 .aboutrime .wrap .acco-wrap .acco .accob h2{width:100%; display:block; position:absolute; top:254px; text-shadow:none; color:#092d4d; font-weight:100;}
-.aboutrime .wrap .acco-wrap .acco .acco-txt{width:97%; height:300px; position:relative; background:url(../img/accob.png)bottom no-repeat; background-size:100%; background-size: cover;top:-174px; margin:0 auto;}
-.aboutrime .wrap .acco-wrap .acco .acco-txt3 p{margin-bottom:40px;}
-.aboutrime .wrap .acco-wrap .acco .acco-txt4 p{margin-bottom:30px;}
-.aboutrime .wrap .acco-wrap .acco .acco-txt p{width:100%; color:white; font-family:"UglyQua"; font-size:20px; bottom:15px; position:absolute;}
+.aboutrime .wrap .acco-wrap .acco .acco-txt{width:97%; height:220px; position:relative; background:url(../img/accob.png)bottom no-repeat; background-size:100%; background-size: cover;top:-174px; margin:0 auto;}
+.aboutrime .wrap .acco-wrap .acco .acco-txt2 p{margin-bottom:15px;}
+.aboutrime .wrap .acco-wrap .acco .acco-txt3 p{margin-bottom:25px;}
+.aboutrime .wrap .acco-wrap .acco .acco-txt4 p{margin-bottom:12px;}
+.aboutrime .wrap .acco-wrap .acco .acco-txt p{position:absolute; width:90%; color:white; font-family:"UglyQua"; font-size:16px; bottom:15px; right: 10px;}
 
 
 
