@@ -1,269 +1,251 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="웹퍼블리셔,김정윤,포트폴리오,Portfolio, UI, UX">
-    <meta name="title" content="JY KIM's portfolio">
-    <meta name="author" content="KimJungYoon">
-    <meta name="description" lang="ko" content="김정윤의 포트폴리오">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    
-    <title>김정윤의 포트폴리오입니다.</title>
-</head>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>RiME - Remember in my eyes</title>
+		<link rel="stylesheet" href="css/page1.css">
+		<link rel="stylesheet" href="css/swipebox.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/lightslider.css">
+		<script src="js/jquery-2.1.4.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/jquery.swipebox.js"></script>
+        <script src="js/lightslider.js"></script>
+        <script src="js/slider.js"></script>
+	</head>
+	<body>
+<!-------------------------------Top contents---------------------------------->
+        <div class="top">
+            <div class="wrap">
+                <div class="title">
+                    <h1>Explore Now</h1>
+                    <p>Explore the beautiful, yet rugged, world of RiME,<br>a single-player puzzle adventure game releasing in May 2017</p>
+                </div>
+<!-------------------------------Side nav---------------------------------->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">About</a>
+                    <a href="html/page2.html">Media & Tips</a>
+                    <a href="html/page3.html">Blog</a>
 
-<body>
-    <!-- Header Showcase -->
-    <header id="showcase" class="grid">
-        <div class="bg-image"></div>
-        <div class="content-wrap">
-            <h1>KIM JUNG YOON</h1>
-            <h2>PORTFOLIO</h2>
-            <a href="#introduce" class="btn-top sliding-link"><h4>Read More</h4></a>
-        </div>
-    </header>
+                    <p>Follow Us</p>
+                    <img class="hr" src="img/bar.png">
 
-    <!-- Navbar -->
-    <nav>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a class="scroll" href="#showcase">Home</a>
-            <a class="scroll" href="#portfolio">Portfolio</a>
-            <a class="scroll" href="#skill">Skill</a>
-            <a class="scroll" href="#contact">Contact</a>
-        </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
-    </nav>
-
-    <!-- Main Area -->
-    <main id="main">
-
-        <!-- INtroduce -->
-        <section id="introduce" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title">Welcome!!</h2>
-                <div class="content-text">
-                    <p>
-                        안녕하세요. <br> 저의 포트폴리오 사이트에 오신 것을 환영합니다. <br>
-                        저는 기획에서 개발까지 사용자의 경험을 고려하여 <br> 사이트를 제작하기 위해 고민합니다. <br>
-                        급변하는 IT 환경속에서 항상 공부하며 발전하는 UI 개발자가 되고 싶습니다. 
-                    </p>
+                    <ul class="social-menu">
+                        <li><a href="https://www.facebook.com/rimegame/" target="_blank">Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href="http://rimegame.tumblr.com/" target="_blank">Tumblr <i class="fa fa-tumblr-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.reddit.com/r/rime" target="_blank">Reddit <i class="fa fa-reddit-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/RiMEGame" target="_blank">Twitter <i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href="http://steamcommunity.com/app/493200" target="_blank">Steam <i class="fa fa-steam-square" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="toggle">
+                    <span onclick="openNav()"><img src="img/toggle.png"></span>
                 </div>
             </div>
-        </section>
-
-        <!-- Portfolio -->
-        <div class="card title-portfolio">
-            <h2>PORTFOLIO</h2>
+            <img class="bird" src="img/bird.png">
         </div>
-        <section id="portfolio" class="grid">
-            <ul>
-                <li>
-                    <div class="card">
-                        <div class="thumbnail">
-                            <img src="./img/port-jw.png" alt="쥬라기 월드 사이트 썸네일">
-                            <a href="./JW/index.html" target="_blank">
-                                <div class="basicBox">
-                                    페이지 보기
-                                    <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x='0' y='0' fill='none' width='130' height='65'/>
-                                    </svg>
-                                </div>
-                            </a>
+<!-------------------------------About rime---------------------------------->
+        <div class="aboutrime">
+            <div class="wrap">
+                <h2>About<h1>RiME</h1></h2>
+                <div class="acco-wrap">
+                    <div class="acco">
+                        <div class="acco1 accob">
+                            <h2>Explore</h2>
                         </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Jurasic World</h3>
-                            <p>영화 쥬라식 월드의 한국 랜딩 페이지를 리뉴얼</p>
-                            <p>CSS flex 기능으로 반응형 웹 제작</p>
-                            
+                        <div class="acco-txt">
+                            <p>Discover the mystreious island at your own pace. Interact with wildlife, search for hidden items or simply take in the sights and sounds.</p>
                         </div>
                     </div>
+                    <div class="acco">
+                        <div class="acco2 accob">
+                            <h2>Solve Puzzles</h2>
+                        </div>
+                        <div class="acco-txt acco-txt2">
+                            <p>Make your way through the ancient ruins by solving puzzles with sound, light, perspective, platforming, and even time manipulation.</p>
+                        </div>
+                    </div>
+                    <div class="acco">
+                        <div class="acco3 accob">
+                            <h2>Find Secrets</h2>
+                        </div>
+                        <div class="acco-txt acco-txt3">
+                            <p>Dive deeper into the boy's backstory by uncovering dozens of secret and collectables.</p>
+                        </div>
+                    </div>
+                    <div class="acco">
+                        <div class="acco4 accob">
+                            <h2>Be Enchanted</h2>
+                        </div>
+                        <div class="acco-txt acco-txt4">
+                            <p>Take in beautiful, Mediterranean-inspired terrain complemented by the captivating music of David Garcia Diaz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------------Slider---------------------------------->
+        <div class="demo">
+            <ul id="lightSlider">
+                <li data-thumb="img/sl-1-1.jpg">
+                    <h3><p>In RiME</p>, you play as a young boy who has awakened on a<br>mysterious island after a shipwreck. You see wild animals, long-<br>forgotten ruins and a massive tower that beckons you to come closer.</h3>
+                    <img class="slide-img" src="img/sl-1-1.jpg"/>
+                    <img class="logo-img" src="img/logo.PNG">
                 </li>
-                <li>
-                    <div class="card">
-                        <div class="thumbnail">
-                            <img src="./img/port-block.png" alt="빵집 블럭180 썸네일">
-                            <a href="./BLOCK180/index.html" target="_blank">
-                                <div class="basicBox">
-                                    페이지 보기
-                                    <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x='0' y='0' fill='none' width='130' height='65'/>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title">BLOCK 180</h3>
-                            <p>가상 식빵 전문점 홈페이지</p>
-                            <p>실제 업체를 방문 연구하여 기획, 제작</p>
-                            <p>Bootstrap 4 적용한 반응형 웹</p>
-                        </div>
-                    </div>
+                <li data-thumb="img/sl1.jpg">
+                    <h3><p>A land of discovery</p> stretches out before you. Explore the<br>beautiful, yet rugged, world of RiME, a single-player puzzle<br>adventure game releasing in May 2017.</h3>
+                    <img class="slide-img" src="img/sl1.jpg"/>
+                    <img class="logo-img" src="img/logo.PNG">
+                </li>
+                <li data-thumb="img/screenshot_04.jpg">
+                    <h3><p>Armed with</p> your wits and a will to overcome—and the guidance<br>of a helpful fox—you must explore the enigmatic island and unlock<br>its closely guarded secrets.</h3>
+                    <img class="slide-img" src="img/screenshot_04.jpg"/>
+                    <img class="logo-img" src="img/logo.PNG">
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <div class="card">
-                        <div class="thumbnail">
-                            <img src="./img/port-rime.png" alt="게임 라임 사이트 섬네일">
-                            <a href="./RiME/index.html" target="_blank">
-                                <div class="basicBox">
-                                    페이지 보기
-                                    <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x='0' y='0' fill='none' width='130' height='65'/>
-                                    </svg>
-                                </div>
-                            </a>
+        </div>
+<!-------------------------------Screenshot---------------------------------->
+        <div class="background-merge">
+            <div class="gallery_box">
+                <div class="container">
+                    <div class="text_box">
+                        <h2>IN GAME<br>SCREENSHOT</h2>
+                        <div class="line_box"><img src="img/line.png" alt=""></div>
+                    </div>
+                    <div class="screenshot_box">
+                            <div class="wrap small-width">
+                                <div id="try"></div>
+                                <ul id="box-container">
+                                    <li class="box">
+                                        <a href="img/screenshot_01.jpg" class="swipebox" title="1">
+                                            <img src="img/screenshot_01.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="box">
+                                        <a href="img/screenshot_02.jpg" class="swipebox" title="2">
+                                            <img src="img/screenshot_02.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="box">
+                                        <a href="img/screenshot_03.jpg" class="swipebox" title="3">
+                                            <img src="img/screenshot_03.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="box">
+                                        <a href="img/screenshot_04.jpg" class="swipebox" title="4">
+                                            <img src="img/screenshot_04.jpg" alt="image">
+                                        </a>
+                                    </li>
+
+                                    <li class="box">
+                                        <a href="img/screenshot_05.jpg" class="swipebox" title="5">
+                                            <img src="img/screenshot_05.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="box">
+                                        <a href="img/screenshot_06.jpg" class="swipebox" title="6">
+                                            <img src="img/screenshot_06.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="box">
+                                        <a href="img/screenshot_07.jpg" class="swipebox" title="7">
+                                            <img src="img/screenshot_07.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="box">
+                                        <a href="img/screenshot_08.jpg" class="swipebox" title="8">
+                                            <img src="img/screenshot_08.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                        <div class="card-content">
-                            <h3 class="card-title">RIME</h3>
-                            <p>게임 Rime의 리뉴얼 홈페이지</p>
-                            <p>사용자 입장을 고려하여 기획,제작</p>
-                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="thumbnail">
-                            <img src="./img/port-port.png" alt="포트폴리오 사이트 썸네일">
-                            <a href="#home">
-                                <div class="basicBox">
-                                    페이지 보기
-                                    <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x='0' y='0' fill='none' width='130' height='65'/>
-                                    </svg>
+                </div>
+            </div>
+<!-------------------------------Prize---------------------------------->
+            <div class="prize_box">
+                <div class="container">
+                    <div class="text_box">
+                        <h2><p>7</p> NOMINATED CATEGORIES</h2>
+                        <div class="line_box"><img src="img/line.png" alt=""></div>
+                    </div>
+                    <div class="image_box">
+                        <div class="line_1">
+                            <div class="content">
+                                <div class="award">
+                                    <img src="img/laurel.png" alt="">
+                                    <p>Jerry<br>Goldsmith
+                                        <br>Award
+                                    </p>
                                 </div>
-                            </a>
+                                <div class="award">
+                                    <img src="img/laurel.png" alt="">
+                                    <p>Best<br>Audio/Music
+                                        <br>Award
+                                    </p>
+                                </div>
+                                <div class="award">
+                                    <img src="img/laurel.png" alt="">
+                                    <p>Best<br>Art
+                                        <br>Award
+                                    </p>
+                                </div>
+                                <div class="award">
+                                    <img src="img/laurel.png" alt="">
+                                    <p>Best<br>Design
+                                        <br>Award
+                                    </p>
+                                </div>
                             </div>
-                        <div class="card-content">
-                            <h3 class="card-title">Portfolio Site</h3>
-                            <p>포트폴리오사이트</p>
-                            <p>CSS flex와 grid 기능으로 반응형 웹 제작</p>
                         </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
+                        <div class="line_2">
+                            <div class="content">
+                                <div class="award"><img src="img/laurel.png" alt="">
+                                    <p>Best<br>Console Game
+                                        <br>Award
+                                    </p>
+                                </div>
+                                <div class="award"><img src="img/laurel.png" alt="">
+                                    <p>Best<br>PC Game
+                                        <br>Award
+                                    </p>
+                                </div>
+                                <div class="award"><img src="img/laurel.png" alt="">
+                                    <p>Game<br>of the<br>Year
+                                        <br>Award
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- Work Process -->
-        <section id="work-process" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title">WORK PROCESS</h2>
-                <ul class="flex">
-                    <li>
-                        <div class="card">
-                            <img src="./img/concept5.svg" alt="컨셉정하기">
-                            <h3 class="card-title">CONCEPT</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <img src="./img/ui3.svg" alt="ui,ux 디자인">
-                            <h3 class="card-title">UI/UX Design</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <img src="./img/proto2.svg" alt="프로토타입 만들기">
-                            <h3 class="card-title">PROTOTYPE</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <img src="./img/devel.svg" alt="개발하기">
-                            <h3 class="card-title">DEVELOP</h3>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <!-- SKILL -->
-        <section id="skill">
-            <div class="card title-skill">
-                <h2>SKILL</h2>
+<!-------------------------------Buy now---------------------------------->
+            <div class="buy_box">
+                <div class="container">
+                    <div class="text_box">
+                        <h2>BUY NOW & ENJOY</h2>
+                        <div class="line_box"><img src="img/line.png" alt=""></div>
+                    </div>
+                    <div class="store_box">
+                        <a href="http://www.nintendo.com/games/detail/rime-switch"><img class="switch" src="img/logo/Switch-logo.png" alt=""></a>
+                        <a href="https://www.microsoft.com/en-us/store/p/rime/bsqz03s3rv54"><img src="img/logo/xboxone-logo.png" alt=""></a>
+                        <a href="https://www.playstation.com/en-us/games/rime-ps4/"><img src="img/logo/PlayStation4-logo.png" alt=""></a>
+                        <a href="http://store.steampowered.com/app/493200/RiME/"><img src="img/logo/steam-logo.png" alt=""></a>
+                    </div>
+                </div>
             </div>
-            <ul class="flex">
-                <li>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">HTML/CSS</h3>
-                            <p>HTML5/CSS3 를 통해 웹표준 사이트를 제작합니다. </p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">JAVASCRIPT</h3>
-                            <p>ES5와 ES6 의 기본을 학습하고 실력을 향상 중입니다.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">JQUERY</h3>
-                            <p>다양한 기능의 플러그인을 사이트에 적용하고 수정할 수 있습니다.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">RESPONSIVE WEB</h3>
-                            <p>CSS의 강력한 기능인 grid,flex를 활용해 반응형 웹을 제작할 수 있습니다.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">ENGLISH</h3>
-                            <p>영어로 작성된 기술문서를 이해하고 프로젝트에 적용 할 수 있습니다.</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">ETC</h3>
-                            <p> 리액트의 기본을 학습하였고 프론트 개발 동향을 파악하고 있습니다.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact" class="grid">
-            <div class="box">
-                <h2 class="content-title">Contact</h2>
-                <p>궁금하신 점이 있다면 문의 주세요!</p>
-                <p>yoonwdwd@gmail.com</p>
-            </div>
-            <div class="box">
-                <h2 class="content-title">About Me</h2>
-                <p>이름 : 김정윤 <br>
-                    <br>
-                   취미 : 기타연주, 보드타기 <br>     
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer id="main-footer" class="grid">
-        <div>KJY's Portfolio</div>
-        <div>Project By <a href="http://yoonwd.github.io" target="_blank">Kim jung yoon</a></div>
-    </footer>
-
-<!-- script file -->
-    <script src="./js/script.js"></script>
-</body>
+        </div>
+<!-------------------------------Footer---------------------------------->
+	    <div class="footer">
+	        <div class="footer-wrap">
+	            <img class="footerlogo" src="img/logo.PNG">
+	            <p>RiME &copy; 2017 TEQUILA WORKS. ALL RIGHT RESERVED.</p>
+	        </div>
+	    </div>
+	</body>
 </html>
