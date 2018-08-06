@@ -309,6 +309,9 @@ iframe {
     color: #a3a3a3;
 }
 
+.video h3 {
+    color:#999;
+}
 /* 푸터 영역 */
 footer {
     position: relative;
