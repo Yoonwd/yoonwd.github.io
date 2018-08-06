@@ -39,4 +39,6 @@ $(".play-4").yu2fvl();
 $(".play-5").yu2fvl();
 $(".play-6").yu2fvl();
 
+// 텍스트 애니메이션
+AOS.init();
 })
