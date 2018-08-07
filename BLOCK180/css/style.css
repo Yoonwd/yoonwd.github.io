@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 @import url('https://fonts.googleapis.com/css?family=Jomhuria');
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 
 html, body {
     font-family: 'Poppins', 'Nanum Gothic', sans-serif;
@@ -9,7 +10,6 @@ html, body {
 
 
 /* 헤더 영역 */
-
 .nav-item {
     margin-left: 20px;
     margin-right: 20px;
@@ -17,7 +17,6 @@ html, body {
 
 
 /* 슬라이드 영역 */
-
 .carousel {
     height: 700px;
     margin-top: 3rem;
@@ -81,7 +80,6 @@ footer .col-12 h5 {
 
 
 /* share pages */
-
 .about, .menu, .store {
     margin-top: 2rem;
     padding-top: 2rem;
@@ -134,10 +132,15 @@ footer .col-12 h5 {
 .menu-line {
     width: 60%;
 }
+
 .menu-line img:hover {
     opacity: .5;
 }
 
+.card-title {
+    font-size: 1rem;
+    color : brown;
+}
 
 /* store page only*/
 .store img {
