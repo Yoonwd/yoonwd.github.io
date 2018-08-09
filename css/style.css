@@ -47,7 +47,7 @@ body {
   }
   
   /* Header Showcase */
-  
+
   #showcase {
     height: 100vh;
     min-height: 450px;
@@ -75,6 +75,7 @@ body {
   }
 
 /* Navbar */
+
   nav {
     text-decoration: none;
   }
@@ -163,8 +164,11 @@ nav span:hover {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-  
+
   #portfolio ul li {
     margin-bottom: 1em;
     background: #fff;
@@ -201,6 +205,7 @@ nav span:hover {
   }
 
 /* portfolio-button */
+
 #portfolio .card .basicBox {
   position: absolute;
   display: none;
@@ -284,6 +289,7 @@ svg rect {
   }
   
 /* Skill */
+
 .title-skill {
   color:black;
 }
@@ -315,6 +321,7 @@ svg rect {
 }
 
 /* element move up */
+
 #skill li {
   position: relative;
   top:0;
@@ -344,6 +351,7 @@ svg rect {
   background: white;
   color: #666
 }
+
 /* Footer */
 
 #main-footer {
@@ -359,6 +367,7 @@ svg rect {
 }
 
 /* Media Queries */
+
 @media (min-width: 410px) and (max-width: 699px) {
   #portfolio ul {
     width: 350px;
@@ -369,6 +378,7 @@ svg rect {
 
 
 @media (min-width: 700px) {
+
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
