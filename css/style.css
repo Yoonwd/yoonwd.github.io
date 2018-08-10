@@ -191,7 +191,8 @@ nav span:hover {
 
   #portfolio .card .card-content {
     padding: 1.5em;
-    padding-top: 0;
+    padding-top: 4%;
+    padding-bottom: 3%;
   }
 
   #portfolio .card .card-content h3 {
@@ -200,8 +201,22 @@ nav span:hover {
   }
   
   #portfolio .card-content p {
-    font-size: 12px;
+    font-size: 13px;
     padding: 0;
+  }
+
+  #portfolio .card-content a {
+    width: 100px;
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    font-size: 14px;
+    border: 1.5px solid #2690d4;
+    border-radius: 5px;
+  }
+
+  #portfolio .card-content a:hover {
+    color: #2690d4;
   }
 
 /* portfolio-button */
