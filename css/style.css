@@ -136,88 +136,89 @@ nav span:hover {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-  /* introduce */
-  
-  #introduce {
-    background: white;
-    color: #333;
-    padding-bottom: 2em;
-  }
+/* introduce */
 
-  #introduce h2 {
-    margin-top: 20px; 
-  }
+#introduce {
+  background: white;
+  color: #333;
+  padding-bottom: 2em;
+}
 
-  #introduce p {
-    color: #666;
-    word-break: keep-all;
-  }
-  
-  /* Portfolio */
-  
-  #portfolio {
-    padding: 2em 1em 1em;
-  }
+#introduce h2 {
+  margin-top: 20px; 
+}
 
-  
-  #portfolio ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+#introduce p {
+  color: #666;
+  word-break: keep-all;
+}
 
-  #portfolio ul li {
-    margin-bottom: 1em;
-    background: #fff;
-    color: #333;
-  }
+/* Portfolio */
 
-  #portfolio ul li .card .thumbnail {
-    position: relative;
-    display: inline-block;
-  }
- 
-  #portfolio ul li .card .thumbnail:hover img {
-    opacity: .3;
-    transition: opacity 1s;
-  }
-  
-  #portfolio ul li .card .thumbnail:hover .basicBox {
-    display: block;
-  }
+#portfolio {
+  padding: 2em 1em 1em;
+}
 
-  #portfolio .card .card-content {
-    padding: 1.5em;
-    padding-top: 4%;
-    padding-bottom: 3%;
-  }
 
-  #portfolio .card .card-content h3 {
-    padding: 0;
-    padding-bottom: 10px;   
-  }
-  
-  #portfolio .card-content p {
-    font-size: 13px;
-    padding: 0;
-  }
+#portfolio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-  #portfolio .card-content a {
-    width: 100px;
-    text-decoration: none;
-    color: #666;
-    display: inline-block;
-    font-size: 14px;
-    border: 1.5px solid #2690d4;
-    border-radius: 5px;
-  }
+#portfolio ul li {
+  max-width: 350px;
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
 
-  #portfolio .card-content a:hover {
-    color: #2690d4;
-  }
+#portfolio ul li .card .thumbnail {
+  position: relative;
+  display: inline-block;
+}
+
+#portfolio ul li .card .thumbnail:hover img {
+  opacity: .3;
+  transition: opacity 1s;
+}
+
+#portfolio ul li .card .thumbnail:hover .basicBox {
+  display: block;
+}
+
+#portfolio .card .card-content {
+  padding: 1.5em;
+  padding-top: 4%;
+  padding-bottom: 3%;
+}
+
+#portfolio .card .card-content h3 {
+  padding: 0;
+  padding-bottom: 10px;   
+}
+
+#portfolio .card-content p {
+  font-size: 13px;
+  padding: 0;
+}
+
+#portfolio .card-content a {
+  width: 100px;
+  text-decoration: none;
+  color: #666;
+  display: inline-block;
+  font-size: 14px;
+  border: 1.2px solid #2690d4;
+  border-radius: 5px;
+}
+
+#portfolio .card-content a:hover {
+  color: #2690d4;
+}
 
 /* portfolio-button */
 
@@ -353,7 +354,13 @@ svg rect {
 
 /* Contact / Boxes */
 
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #contact .box {
+  flex-grow: 1;
   padding: 2em;
   color: #fff;
 }
