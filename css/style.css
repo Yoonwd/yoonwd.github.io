@@ -476,6 +476,7 @@ svg rect {
 
   #introduce .content_text p {
     padding-top: 0;
+    text-align: left;
   }
 
   .content_wrap,
@@ -526,6 +527,10 @@ svg rect {
     padding-bottom: 100px;
   }
 
+  #introduce .content_text p {
+    text-align: left;
+  }
+
   #work-process ul li {
     width: 23%;
   }
@@ -555,6 +560,9 @@ svg rect {
 
 
 @media (min-width: 1600px) {
+  #introduce .content_text p {
+    text-align: left;
+  }
   #showcase h1 {
     font-size: 5vw;
   }
