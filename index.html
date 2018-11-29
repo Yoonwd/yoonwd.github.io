@@ -18,12 +18,14 @@
 
     gtag('config', 'UA-123403081-1');
     </script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">   
     <title>김정윤의 포트폴리오입니다.</title>
@@ -33,7 +35,7 @@
     <!-- Header Showcase -->
     <header id="showcase" class="grid">
         <div class="bg-image"></div>
-        <div class="content-wrap">
+        <div class="content_wrap">
             <h1>KIM JUNG YOON</h1>
             <h2>PORTFOLIO</h2>
             <a href="#introduce" class="btn-top sliding-link"><h4>Read More</h4></a>
@@ -55,17 +57,23 @@
     <!-- Main Area -->
     <main id="main">
 
-        <!-- INtroduce -->
+        <!-- Introduce -->
         <section id="introduce" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title">Welcome!!</h2>
-                <div class="content-text">
-                    <p>
+            <div class="content_wrap">
+                <h2 class="content_title">Welcome!!</h2>
+                <div class="content_text">
+                    <p class="intro_text" data-aos="fade-up">
                         안녕하세요. <br> 저의 포트폴리오 사이트에 오신 것을 환영합니다. 
-                        저는 기획에서 개발까지 사용자의 경험을 고려하여 사이트를 제작하기 위해 고민합니다.
+                        저는 많은 사용자가 긍정적인 경험을 할수있는 사이트를 제작하기 위해 고민합니다.
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="600">
                         급변하는 IT 환경속에서 항상 공부하며 발전하는 UI 개발자가 되고 싶습니다. 
                     </p>
                 </div>
+                <span class="hero__scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
+                    <br>
+                    <i class="chevron bottom"></i>
+                </span>
             </div>
         </section>
 
@@ -166,8 +174,8 @@
 
         <!-- Work Process -->
         <section id="work-process" class="grid">
-            <div class="content-wrap">
-                <h2 class="content-title">WORK PROCESS</h2>
+            <div class="content_wrap">
+                <h2 class="content_title">WORK PROCESS</h2>
                 <ul class="flex">
                     <li>
                         <div class="card">
@@ -257,12 +265,12 @@
         <!-- Contact -->
         <section id="contact" class="flex">
             <div class="box">
-                <h2 class="content-title">Contact</h2>
+                <h2 class="content_title">Contact</h2>
                 <p>궁금하신 점이 있다면 문의 주세요!</p>
                 <p>yoonwdwd@gmail.com</p>
             </div>
             <div class="box">
-                <h2 class="content-title">About Me</h2>
+                <h2 class="content_title">About Me</h2>
                 <p>이름 : 김정윤 <br>
                     <br>
                    취미 : 기타연주, 보드타기 <br>     
@@ -279,5 +287,8 @@
 
 <!-- script file -->
     <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>   
 </body>
 </html>
