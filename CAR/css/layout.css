@@ -1,0 +1,42 @@
+/*head*/
+.header{width:1180px; line-height:70px; margin:0 auto;}
+.header:after{content:''; display:block; clear:both;}
+.header h1{width:103px; margin-right:113px; letter-spacing:-1px; font-family:'Franklin Gothic'; float:left;}
+.header h1 a{color:#16295d;}
+
+nav{margin-right:95px; float:left;}
+nav ul{width:578px;}
+nav ul li{display:inline; margin-right:45px; font-size:16px;}
+nav ul li:hover{color:#1d49ad}
+nav ul li:last-child{margin-right:0; text-align:right;}
+nav ul li a{color:#333;}
+
+.login{width:90px; margin-right:15px; float:left; }
+.login:after{content:''; display:block; clear:both;}
+.login p{font-size:12px; letter-spacing:-1px; float:left;}
+.login p:first-child{margin-right:11px;}
+.login p a{color:#333;}
+
+.sub_bar{width:186px; padding:20px 0; float:left;}
+.sub_bar:after{content:''; display:block; clear:both;}
+.sub_bar p{line-height:30px; outline:1px solid #999; text-align:center; font-size:12px; float:left;}
+.sub_bar p:first-child{width:86px;}
+.sub_bar p:last-child{width:99px; margin-left: 1px;}
+.sub_bar p a{color:#333;}
+
+/*header-visual*/
+.header_visual{position:relative; width:100%; height:189px; margin:0 auto; background-image:url('../img/sub_visual.jpg'); background-size:100%;}
+.header_visual h2{font-size:35px; font-weight:400; color:#fff; position:absolute; left:50%; margin-left:-50px; top:36%;} 
+
+
+/*footer_wrapper*/
+.footer_wrapper{width:100%; background:#333;}
+
+/*footer*/
+.footer{width:1180px; margin:52px auto 0; padding:52px 0; }
+
+.inner{width:720px; margin-bottom:24px;}
+.inner li{display:inline; font-size:13px; color:#fff;}
+.inner .ba{padding:0 11px;}
+.inner a{color:#fff;}
+.footer p{margin-bottom:9px; font-size:12px; color:#aaa;}

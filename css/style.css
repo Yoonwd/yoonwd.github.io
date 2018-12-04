@@ -232,7 +232,7 @@ nav span:hover {
 
 #portfolio ul li {
   max-width: 350px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   background: #fff;
   color: #333;
 }
@@ -495,7 +495,7 @@ svg rect {
   }
 
   #portfolio li {
-    width: 31%;
+    width: 300px;
   }
 
   #skill ul {
@@ -541,7 +541,7 @@ svg rect {
   }
 
   #skill ul li {
-    width: 31%;
+    width: 458px;
   }
 
   .sidenav a:nth-child(2) {
@@ -571,7 +571,25 @@ svg rect {
     padding-bottom: 100px;
   }
 
+  #work-process {
+    height: 400px;
+  }
+
+  #work-process .content_wrap {
+    padding-top: 20px;
+  }
+
+  #work-process ul {
+    padding-top: 40px;
+  }
+
   #skill {
-    height: 500px;
+    height: 630px;
+  }
+}
+
+@media (min-width: 1769px) {
+  #skill {
+    height: 530px;
   }
 }

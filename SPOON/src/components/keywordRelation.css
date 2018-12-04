@@ -1,0 +1,11 @@
+.container {
+    margin: 15px auto 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+	max-width: 1020px;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}

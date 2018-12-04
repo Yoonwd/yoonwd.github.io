@@ -1,0 +1,88 @@
+.container{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.item {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.label {
+	word-break: keep-all;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: 700;
+  font-size: 13.5px;
+}
+
+.badge {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 40%;
+	height: 40%;
+	border: 2px solid #e3e3e3;
+	border-radius: 50%;
+	min-width: 30px;
+	min-height: 30px;
+	background-color: white;
+}
+
+/* 응답데이터로 들어오는 keywordCategory로 클래스명을 교채 해 주세요. */
+.cate0{
+	background: url(../images/tv_badge.png) no-repeat center center / contain;
+	background-color: white;
+	z-index: 999;
+}
+.cate1{
+	background: url(../images/flag_badge.png) no-repeat center center / contain;
+	background-color: white;
+	z-index: 999;
+}
+.cate2{
+	background: url(../images/person_badge.png) no-repeat center center / contain;
+	background-color: white;
+	z-index: 999;
+}
+.cate3{
+	background: url(../images/play_badge.png) no-repeat center center / contain;
+	background-color: white;
+	z-index: 999;
+}
+.cate4{
+	background: url(../images/tv_badge.png) no-repeat center center / contain;
+	background-color: white;
+	z-index: 999;
+}
+
+.selected {
+	border: 3px solid #ffdb3c;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.selected .badge {
+	background-color: #ffdb3c;
+	border-radius: 50%;
+	border: 2px solid #ffdb3c;
+}
+
+/* 미디어 퀴리로 해상도에 따른 사이즈를 지정해주세요. */
+@media screen and (max-width: 600px) {
+    .item {
+		width: 60px;
+		height: 60px;
+    }
+}
+

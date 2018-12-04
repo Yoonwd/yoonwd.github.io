@@ -1,0 +1,111 @@
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.controls {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	top: 50%;
+	padding: 0 10px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	z-index: 10;
+}
+
+.next{
+    width: 24px;
+    height: 48px;
+	background: url(http://im.spoon.spotvnews.co.kr/custom/template/212_icon.png) no-repeat 0 -4px;
+	background-position: -50px -4px;
+}
+
+.prev{
+    width: 24px;
+    height: 48px;
+    background: url(http://im.spoon.spotvnews.co.kr/custom/template/212_icon.png) no-repeat 0 -4px;
+}
+
+
+
+/* 플로팅 아이콘 */
+.float_icon_wrap {
+	width: 255px;
+	height: 60px;
+}
+.icon_box {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.button {
+	border: 0;
+	padding: 0;
+}
+.button:hover {
+	cursor: pointer;
+}
+
+
+.icons {
+	border-radius: 50%;
+	width: 57px; 
+	height: 57px; 
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 57px;
+	box-shadow: 3px 3px 3px #afafaf;
+}
+
+.icons_01 {
+	color: white;
+	background-color: rgba(48, 48, 48, .9);
+	background-image: url('../images/float_icon_01.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.icons_02 {
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url('../images/float_icon_02.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.icons_03 {
+	color: white;
+	background-color: rgba(48, 48, 48, .9);
+	transform: translateY(-22px);
+}
+
+.icons_04 {
+	color: black;
+	background-color:rgba(255, 255, 255, 1);
+	transform: translateY(-22px);
+}
+
+.background_box {
+	background-color: #f1f1f1;
+}
+
+/* 미디어쿼리 */
+@media all and (min-width:480px) {
+
+
+}
+
+@media all and (min-width:640px) {
+	.background_box {
+		background-color: white;
+	}
+}
+
+
+@media all and (min-width:1024px) {
+ 
+}

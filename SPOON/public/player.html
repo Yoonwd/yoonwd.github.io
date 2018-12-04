@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://m.spoon.spotvnews.co.kr/ -->
+<html lang="ko" class="mac chrome">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+	<meta name="description" content="SPOONFEED">
+	<meta name="author" content="SPOONFEED">
+	<meta name="google-site-verification" content="dh9l0tQZU1dVKN8CQDMWLatxlg7PgmPEb1a02xMcjcM">
+	<meta name="naver-site-verification" content="e3b043104c2cfa0977887dbb84af8820b4534499">
+
+	<meta property="og:site_name" content="SPOTVNEWS - SPOONFEED">
+	<meta property="og:title" content="SPOTVNEWS - SPOONFEED">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://im.spoon.spotvnews.co.kr/logo/facebook_none.png">
+	<link rel="image_src" href="http://im.spoon.spotvnews.co.kr/logo/facebook_none.png">
+	<meta property="og:url" content="http://m.spoon.spotvnews.co.kr">
+	<meta property="og:description" content="SPOTVNEWS - SPOONFEED">
+	<!-- 
+<meta property="fb:admins" content="facebook_user_id"/>
+<meta property="fb:app_id" content="app_id"/>
+-->
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@spoon_spotvnews_co_kr">
+	<meta name="twitter:creator" content="@spoon_spotvnews_co_kr">
+	<meta name="twitter:title" content="SPOTVNEWS - SPOONFEED">
+	<meta name="twitter:description" content="SPOTVNEWS - SPOONFEED">
+	<meta name="twitter:image" content="http://im.spoon.spotvnews.co.kr/logo/facebook_none.png">
+
+
+
+
+	<title>SPOTVNEWS - SPOONFEED</title>
+	<link rel="shortcut icon" href="http://im.spoon.spotvnews.co.kr/logo/favicon.ico" type="image/x-icon"><!-- android ico 114x114 사이즈 맞아야 나옴 -->
+	<link rel="apple-touch-icon" href="http://im.spoon.spotvnews.co.kr/logo/touch-icon.png"><!-- png 114x114 -->
+	<!--
+<link rel="apple-touch-icon" sizes="72x72" href="http://im.spoon.spotvnews.co.kr/m/touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="http://im.spoon.spotvnews.co.kr/m/touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="http://im.spoon.spotvnews.co.kr/m/touch-icon-ipad-retina.png" />
+<link rel="apple-touch-startup-image" href="http://im.spoon.spotvnews.co.kr/m/startup.png" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+-->
+	<link rel="stylesheet" href="./SPOTVNEWS - SPOONFEED_files/jquery-ui-1-10.css" type="text/css">
+	<link rel="stylesheet" href="./SPOTVNEWS - SPOONFEED_files/style.css" type="text/css">
+	<link rel="stylesheet" href="./SPOTVNEWS - SPOONFEED_files/m_style.css" type="text/css">
+
+	<link rel="stylesheet" href="./SPOTVNEWS - SPOONFEED_files/box_skin.css" type="text/css">
+	<link rel="stylesheet" href="./SPOTVNEWS - SPOONFEED_files/template_skin.css" type="text/css">
+
+	<link rel="stylesheet" href="./SPOTVNEWS - SPOONFEED_files/mobile.css" type="text/css"><!-- PC용 오버라이드 해야 하기 때문에 여기다 둠 -->
+
+	<script async="" src="./SPOTVNEWS - SPOONFEED_files/analytics.js"></script>
+	<script async="" charset="utf-8" src="./SPOTVNEWS - SPOONFEED_files/plugin.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./SPOTVNEWS - SPOONFEED_files/jquery1-11.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./SPOTVNEWS - SPOONFEED_files/jquery-ui-1-10.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./SPOTVNEWS - SPOONFEED_files/util.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./SPOTVNEWS - SPOONFEED_files/mobile.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./SPOTVNEWS - SPOONFEED_files/library.js"></script>
+	<script type="text/javascript" charset="utf-8" src="./SPOTVNEWS - SPOONFEED_files/kakao.js"></script>
+
+
+	<script type="text/javascript">
+		// domain 
+		var HOST = "spoon.spotvnews.co.kr" // 도메인... http://www. 제외하고
+			,
+			DOMAIN = "http://spoon.spotvnews.co.kr" // 일반 도메인
+			,
+			SSL_DOMAIN = "http://spoon.spotvnews.co.kr" // 보안서버 도메인
+			,
+			ADM_DOMAIN = "http://admin.spoon.spotvnews.co.kr" // 관리자 도메인
+			,
+			PH_DOMAIN = "http://ph.spoon.spotvnews.co.kr" // 기사 사진 도메인
+			,
+			IM_DOMAIN = "http://im.spoon.spotvnews.co.kr" // 이미지,css,js 도메인
+			,
+			M_DOMAIN = "http://m.spoon.spotvnews.co.kr" // 모바일 도메인
+			,
+			SEARCH_DOMAIN = "http://spoon.spotvnews.co.kr" // 검색페이지 or 검색엔진 도메인
+			,
+			LOGIN_ID = ""; // login id
+
+
+		// 언어 js로 전달
+		var lang = {
+			id: "아이디",
+			ip: "아이피",
+			add: "추가",
+			apply: "적용",
+			password: "비밀번호",
+			save: "저장",
+			modify: "수정",
+			delte: "삭제",
+			loginNotId: "아이디를 입력해 주세요.",
+			loginNotPw: "비밀번호를 입력해 주세요.",
+			networkError: "네트워크가 불안정합니다. 잠시후 다시시도 하여 주세요.",
+			required: "필수",
+			requiredSentence: "필수 항목입니다.",
+			requireKeyword: "검색어를 입력하여 주세요.",
+			close: "닫기",
+			fold: "접기",
+			restore: "복원하기",
+			axError: "통신중에러가 발생했습니다. 잠시후 다시시도 하여 주세요.",
+			confirmDelete: "삭제할까요?",
+			daySubfix: "일",
+			monthSubfix: "월",
+			weeks: ["일", "월", "화", "수", "목", "금", "토"],
+			hourSubfix: "시",
+			minuteSubfix: "분",
+			gun: "건",
+			articleTitle: "제목",
+			captcha: "보안문자",
+			captchaBlock: "자동 댓글방지",
+			intercept: "차단",
+			spamFilter: "스팸필터",
+			validRequireFile: "파일을 선택하여 주세요.",
+			validSelectImage: "이미지파일만 선택하여 주세요.",
+			validSelectImageSwf: "jpg, png, gif, swf 확장자만 선택하여 주세요.",
+			validFileMaxCount: "파일은 최대 []개까지만 허용합니다.",
+			copiedDoPaste: "복사되었습니다. 원하는 곳에 붙여넣기하여 주세요.",
+			controlCcopy: "키보드의 ctrl+C 또는 마우스 오른쪽의 복사하기를 이용해주세요.",
+			confirmLongTime: "게시물이 많을 경우 시간이 오래 걸릴수 있으니 화면을 그대로 두시기 바랍니다.\n\n계속 진행하시겠습니까?",
+			fold: "접기",
+			unfold: "펼치기",
+			sectionSeries: "연재",
+			explainCaptcha: "다른 문자를 보려면 이미지를 클릭해 주세요."
+
+				,
+			banner: "배너",
+			contents: "컨텐츠",
+			refresh: "갱신"
+
+				,
+			total: "전체"
+
+				// 편집용 title
+				,
+			editcfgBoxAdd: "컨텐츠추가",
+			editcfgBoxModify: "박스수정",
+			editcfgBoxDelete: "박스삭제",
+			editcfgBoxReload: "박스갱신",
+			editcfgBoxTitleModify: "박스타이틀수정",
+			editcfgHtmlAdd: "html추가",
+			editcfgHtmlModify: "html수정",
+			editcfgHtmlDelete: "html삭제",
+			editcfgBannerAdd: "배너추가",
+			editcfgBannerModify: "배너수정",
+			editcfgBannerDelete: "배너삭제",
+			editcfgTabAdd: "탭추가",
+			editcfgTabModify: "탭수정",
+			editcfgTabDelete: "탭삭제",
+			editcfgArticleAdd: "기사추가",
+			editcfgArticleModify: "기사수정",
+			editcfgArticleDelete: "기사삭제",
+			editcfgAutoboxAdd: "스킨추가",
+			editcfgAutoboxModify: "스킨수정",
+			editcfgAutoboxDelete: "스킨삭제",
+			editcfgDanAdd: "단추가"
+
+				// 기본 validate
+				,
+			valid: "올바른 데이터 형식이 아닙니다.",
+			validRequired: "정보를 바르게 입력해 주세요.",
+			validRequireAlNum: "입력 항목중 알파벳·숫자 입력란에 알파벳·숫자 이외의 다른 문자가 입력 되었습니다.",
+			validOnlyNumber: "숫자형태만 가능합니다.",
+			validRequireName: "이름을 입력하여 주세요.",
+			validRequireWrongEmail: "올바른 이메일 형식이 아닙니다.",
+			validRequireEmail: "이메일을 입력하여 주세요.",
+			validRequireTitle: "제목을 입력하여 주세요.",
+			validRequireContent: "내용을 입력하여 주세요.",
+			validRequireDuplicateData: "중복되는 내용입니다.",
+			validRequirePassword: "비밀번호를 입력해 주세요.",
+			validRequirePasswordOver4: "비밀번호는 4자이상으로 바르게 입력하여 주세요.",
+			validRequirePasswordMixRegexp: "비밀번호는 영문,숫자,특수문자를 반드시 포함하여 8~32자로 설정하시기 바랍니다. (허용특수문자 : `~!@#$%^&*()_-+=|{}[]?.,)",
+			validRequireCheckedItem: "삭제할 게시물을 선택하여 주세요.",
+			validRequireSelectedItem: "게시물을 선택하여 주세요.",
+			validRequireCaptcha: "보안문자를 입력하여 주세요.",
+			validRequireCaptchaWrong: "보안문자와 입력한 문자가 다릅니다.\n\다시 입력하여 주세요.",
+			validRequireLimitData: "글자수 제한을 초과하였습니다.",
+			validConfirmLimitDataDownsize: "글자수 제한을 초과하였습니다.\n\n줄이고 전송하려면 '확인', 직접 줄이려면 '취소'를 눌러 주세요.",
+			validRequireSelectCategory: "카테고리를 선택해 주세요.",
+			validRequireNickname: "닉네임을 입력해 주세요.",
+			validRequireCompany: "회사명을 입력하여 주세요.",
+			validRequireAddress: "주소를 입력하여 주세요.",
+			validRequireStartDate: "시작일을 바르게 입력하여 주세요.",
+			validRequireEndDate: "종료일을 바르게 입력하여 주세요.",
+			validRequirePeriod: "검색기간을 바르게 입력하여 주세요.",
+			validRequireNumberLimit600: "이하의 숫자만 입력해 주세요."
+
+				,
+			compareRequireNotSameId: "등록한 아이디와 같지 않습니다.",
+			validRequireFillId: "로그인후 삭제해 주세요.",
+			validRequireId: "로그인 후 이용해 주세요."
+
+				// toast용
+				,
+			toastAdded: "추가되었습니다.",
+			toastDeleted: "삭제되었습니다.",
+			toastSaved: "저장되었습니다.",
+			toastApply: "적용되었습니다.",
+			toastNotData: "검색결과가 존재하지 않습니다."
+
+				// 사이트 기본 설정
+				,
+			cfgMetatagContent: "여기에 내용을 입력해 주세요.",
+			cfgRequireMetatagDuple: "이미 등록된 메타태그입니다."
+
+				// 회원설정
+				,
+			mbrcfgRequireUserType: "일반회원과 14세미만 회원은 필수 입니다.",
+			mbrcfgRequireTermContent: "이용약관 내용을 정확히 입력하여 주세요.",
+			mbrcfgRequirePrivacyContent: "내용을 정확히 입력하여 주세요.",
+			mbrcfgRequireAuthJid: "주민번호 인증의 아이디 또는 비밀번호를 입력하여 주세요.",
+			mbrcfgRequireAuthIid: "아이핀 인증의 아이디 또는 비밀번호를 입력하여 주세요.",
+			mbrcfgRequireAuthChecked: "사용체크시 주민번호/아이핀 인증 중 하나 이상 체크하여 주세요."
+
+				,
+			mbrcfgConfirmLimitId: "해당 아이디를 삭제 할까요?",
+			mbrcfgRequireLimitIdField: "제한할 아이디를 입력하여 주세요!",
+			mbrcfgRequireLimitIdDupl: "이미 입력되어 있는 아이디입니다.",
+			mbrcfgRequireLimitIdCode: "수정할 아이디를 먼저 선택해 주세요."
+
+				,
+			mbrcfgConfirmLimitNick: "해당 필명을 삭제 할까요?",
+			mbrcfgRequireLimitNickField: "제한할 필명을 입력하여 주세요!",
+			mbrcfgRequireLimitNickDupl: "이미 입력되어 있는 필명입니다.",
+			mbrcfgRequireLimitNickCode: "수정할 필명을 먼저 선택해 주세요."
+
+				,
+			mbrcfgConfirmLimitPwd: "해당 질문을 삭제 할까요?",
+			mbrcfgRequireLimitPwdField: "질문을 입력하여 주세요!",
+			mbrcfgRequireLimitPwdDupl: "이미 입력되어 있는 질문입니다.",
+			mbrcfgRequireLimitPwdCode: "수정할 질문을 먼저 선택해 주세요."
+
+				,
+			mbrcfgConfirmLimitJob: "해당 질문을 삭제 할까요?",
+			mbrcfgRequireLimitJobField: "질문을 입력하여 주세요!",
+			mbrcfgRequireLimitJobDupl: "이미 입력되어 있는 질문입니다.",
+			mbrcfgRequireLimitJobCode: "수정할 직업을 먼저 선택해 주세요."
+
+				,
+			mbrcfgConfirmWriter: "해당 필자를 삭제 할까요?",
+			mbrcfgRequireWriterField: "필자를 입력하여 주세요!",
+			mbrcfgRequireWriterDupl: "이미 입력되어 있는 필자입니다.",
+			mbrcfgRequireWriterCode: "수정할 필자를 먼저 선택해 주세요."
+
+				// 기타설정
+				,
+			cfgVoteRealNameRequireCode: "기관코드를 입력하여 주세요.",
+			cfgVoteRealNameRequireEtc: "선거명칭,선거기간은 필수 항목입니다."
+
+				// 아이콘,색상,특수문자
+				,
+			cfgDecorationRequireRgbColor: "색상코드를 RGB형태로 바르게 입력하여 주세요."
+
+				// daum view api
+				,
+			daumapiConfirmSubmit: "채널설정등 모든 설정을 정확히 하였습니까?\n\n확인을 누르면 바로 적용됩니다.",
+			daumapiRequireTag: "태그를 바르게 입력해 주세요."
+
+				// skin 설정
+				,
+			editcfgRequireThemeSelect: "테마를 선택하여 주세요.",
+			editcfgConfirmToUsed: "이 스킨을 사용할까요?",
+			editcfgRequireSectionTitle: "섹션명을 입력해주세요.",
+			editcfgRequireSectionCode: "섹션코드를 입력해 주세요.",
+			editcfgRequireSectionSkin: "스킨을 선택해 주세요.",
+			editcfgConfirmRestore: "복원하겠습니까?",
+			editcfgConfirmRemove: "삭제하겠습니까?",
+			editcfgRequireBoxDiv: "스킨분류를 선택하여 주세요.",
+			editcfgRequireBoxName: "스킨명을 입력하여 주세요.",
+			editcfgRequireBoxNum: "단갯수를 입력하여 주세요.",
+			editcfgRequireBoxFile: "샘플이미지 파일을 선택하여 주세요.",
+			editcfgRequireNotRemove: "마지막 남은 필드는 삭제 할 수 없습니다.",
+			editcfgRequireSizeValue: "사이즈 값을 입력하여 주세요.",
+			editcfgTabMaxError: "생성할 수 있는 탭 제한수를 초과하였습니다.",
+			editcfgRequireSizeSelect: "사이즈 선택하여 주세요.",
+			editcfgRequireDeleteExcept: "해당 스킨은 삭제가 불가능합니다."
+
+				// 회원등록/수정
+				,
+			mbrRequireAgreeCheck: "약관및 안내에 동의해주셔야 원활한 회원가입이 이루어집니다.",
+			mbrRequireFormValidate: "형식에 맞게 입력하여 주세요.",
+			mbrRequireDifferentPassword: "비밀번호와 비밀번호 확인을 같게 해주세요.",
+			mbrRequireDuplId: "아이디 중복검사를 해 주세요.",
+			mbrRequireDuplNick: "필명 중복검사를 해 주세요.",
+			mbrRequireNick: "필명을 입력해 주세요."
+
+				,
+			mbrRequireCurrentPwd: "현재 비밀번호를 입력하여 주세요.",
+			mbrRequireChangePwd1: "변경할 비밀번호를 입력하여 주세요.",
+			mbrRequireChangePwd2: "변경할 비밀번호 확인 입력하여 주세요.",
+			mbrRequireNoSamePwd: "변경할 비밀번호와 확인 비밀번호가 같지 않습니다.",
+			mbrRequireFindPwHint: "답변을 입력 주세요."
+
+				,
+			mbrAxSuccessId: "사용가능한 아이디 입니다.",
+			mbrAxSuccessNick: "사용가능한 필명 입니다.",
+			mbrConfirmResetPwd: "비밀번호를 초기화 하겠습니까?",
+			mbrConfirmDelete: "해당 회원을 삭제할까요?"
+
+				,
+			mbrConfirmDeleteProfilePhoto: "프로필 사진을 삭제할까요?",
+			mbrConfirmErrorProfilePhoto: "사진의 링크가 깨졌습니다. 다시 업로드하여 주세요."
+
+				,
+			mbrConfirmDuplId: "이미 추가된 아이디 입니다.\n\n이 아이디를 제거할까요?"
+
+				// 섹션
+				,
+			cfgArticleSectionEmpty: "비움",
+			cfgArticleSectionEmptyEx: "기사에서 해당 섹션을 삭제 (단 2개이상 섹션이 있는경우)",
+			cfgSectionEmptyParentCode: "상위 코드가 없습니다. 상위 코드를 선택해주세요. ",
+			cfgSectionEmptyName: "섹션명을 입력하여 주세요.",
+			cfgSectionNotMoveDepthOver: "단계를 초과하여 섹션을 이동할 수 없습니다.",
+			cfgSectionNotMoveAllToSub: "전체섹션은 다른 섹션의 하위로 이동할 수 없습니다.",
+			cfgSectionSetForm: "섹션정보",
+			cfgSectionSetEmptyCode: "코드 등록시 에러가 발생했습니다. 다시 등록하여 주세요.",
+			cfgSectionSetMoveFrom: "이 섹션의 기사를(에)",
+			cfgSectionSetMoveTo: "이 섹션으로(을)",
+			cfgSectionSetMoveBtn: "이동합니다.",
+			cfgSectionSetAddBtn: "추가합니다.",
+			cfgSectionSetMoveConfirm: "복구가 불가능합니다.\n\n기사량이 많을 경우 오래 걸릴수 있으니 화면을 그대로 두시기 바랍니다.\n\n계속 진행할까요?",
+			cfgSectionSetMoveToMsg: "어디로 이동(추가)할 것인지 섹션을 더블클릭하여 주세요.",
+			cfgSectionSetMoveAlertSelected: "섹션을 바르게 선택하여 주세요.",
+			cfgRecogConfirmAll: "미승인기사를 일반기사로 승인하시겠습니까?",
+			cfgRecogConfirmEmbargo: "엠바고기사입니다.\n\n지금 바로 노출하시겠습니까?",
+			cfgRecogConfirmAllEmbargo: "지금 바로 노출하시겠습니까?"
+
+				// 기사
+				,
+			articleConfirmLocalstorageWriteTime: "저장된 시간",
+			articleConfirmTempData: "임시 저장된 기사가 있습니다.\n다시 불러올까요?",
+			articleToastSaveLocalStorage: "임시저장 되었습니다.",
+			articleTempListTopBtn: "임시저장",
+			articleRequireContent: "기사 본문을 입력하여 주세요.",
+			articleRequireSectionCode: "섹션을 선택하여 주세요.",
+			articleRequireUserName: "기자명을 선택하여 주세요.",
+			articleRequireUserEmail: "기자이메일을 선택하여 주세요.",
+			articleRequireTitle: "제목을 입력하여 주세요.",
+			articleRequireListCheckbox: "변경할 기사를 선택하여 주세요.",
+			articleListBtnEmbargoOk: "즉시 노출",
+			articleListBtnHoldNormal: "일반기사",
+			aritcleListBtnHoldImportant: "중요기사",
+			articleListBtnHoldHeadline: "헤드라인",
+			articleListBtnHoldMain: "",
+			articleNotExists: "존재하지 않는 기사입니다.",
+			arlViewRequireSendEmailTo: "받는 분 이름과 이메일을 바르게 입력하여 주세요.",
+			arlViewRequireNotSupportFont: "지원되지 않는 폰트입니다.",
+			arlViewGalleryNotExists: "사진이 존재하지 않습니다.",
+			arlViewGalleryFirstPhoto: "첫 페이지입니다.",
+			arlViewGalleryLastPhoto: "마지막 페이지입니다.",
+			articleListAll: "전체",
+			articleMedianGetArticle: "기사를 가져왔습니다."
+
+				// 뉴스레터
+				,
+			newsletterDisableEditExp: "뉴스레터에서는 스크립트를 허용하지 않아 배너를 삽입할 수 없습니다.\n\n배너관리에서 '파일주소복사'로 복사한후 태그를 직접 작성하여 주세요."
+
+				// 관련기사
+				,
+			relationRequireTitle: "제목을 입력해 주세요.",
+			relationRequireLink: "외부링크를 입력해 주세요."
+
+				//사진
+				,
+			photoName: "사진",
+			photoConfirmRemovePhotoTag: "본문에서 사진 태그를 제거 하겠습니까?",
+			photoRequireWysiwygMode: "에디터모드(위지윅모드)로 전환해 주세요.",
+			photoRequireErrorParsePhotoTag: "삭제하기 위한 사진의 고유값들을 가져오지 못했습니다.",
+			uploadGeneralIngMsg: "파일을 업로드 중입니다...<br />잠시만 기다려주세요."
+
+				// 첨부파일
+				,
+			fileName: "파일",
+			attachRequireTitle: "첨부파일의 제목을 입력하여 주세요.",
+			attachRequireErrorFilePath: "삭제하기 위한 파일경로가 존재하지 않습니다.",
+			attachConfirmRemoveTag: "본문에서 파일 태그를 제거 하겠습니까?",
+			attachTitle: "첨부파일",
+			attachRequireRetry: "업로드시 에러가 발생했습니다. 다시 업로드하여 주세요."
+
+				// 비디오
+				,
+			videoName: "영상",
+			videoConfirmRemovePhotoTag: "본문에서 영상 태그를 제거할까요?",
+			videoRequireTitle: "영상 제목을 입력하여 주세요.",
+			videoRequireTag: "영상 태그를 입력하여 주세요.",
+			videoRequireFile: "영상 미리보기 이미지를 선택해주세요."
+
+				// 댓글
+				,
+			articleReplyRequireChecked: "삭제할 댓글을 선택하여 주세요.",
+			articleReplyRequireReplyDepth: "더이상 답글을 달수 없습니다.",
+			articleReplyRequireSpamData: "차단할 데이타를 입력하여 주세요.",
+			articleReplyRequireSameNotClicked: "자신의 글은 추천/반대를 할 수 없습니다."
+
+
+				// 편집 - 꾸밈
+				,
+			editRcEditingMode: "편집모드",
+			editRcEditingDisplayArea: "영역표시",
+			editRcGrouping: "기사묶음",
+			editRcEditingRelease: "",
+			editRcPreviewMode: "",
+			editRequireRemoveTabLength: "마지막 남은 탭은 삭제 할 수 없습니다.",
+			editRequireExistsSectionName: "이미 추가되어 있습니다.",
+			editRequireSelectSkin: "스킨을 선택해 주세요.",
+			editRequireExistsParentSection: " 같은 항목에 상위 코드가 존재합니다.",
+			editRequireBoxEmptyContent: "컨텐츠를 추가해 주세요."
+
+				// group
+				,
+			editGroupName: "그룹명",
+			editGroupRequireCode: "추가할 그룹명을 선택하여 주세요.",
+			editGroupRelease: "기사묶음 해제",
+			editGroupConfirmRelease: "해제할까요?",
+			editGroupExplain: "그룹명을 선택하면 기사 묶음이 활성화 됩니다.",
+			editGroupConfirmDelBox: "박스안에 묶음단위 기사 박스가 있습니다.\n\n기사묶음에서 해제후 삭제해 주세요.",
+			editGroupConfirmDelAutobox: "묶음기사입니다. 삭제할까요?"
+
+				// 사진 에디터
+				,
+			photoEditorRequireLink: "사진 편집전 기사를 선택해야 합니다.\n\n기사를 선택하겠습니까?",
+			photoEditorRequireMakeArea: "이미지에서 자를 영역을 지정해 주세요.",
+			photoEditorRequireErrorUpload: "파일 업로드 중 에러가 발생했습니다."
+
+				// 자동박스
+				,
+			editAutoboxRequireTitle: "제목을 입력하여 주세요.",
+			editAutoboxRequireConditionLimit: "노출갯수를 바르게 입력하여 주세요.",
+			editAutoboxRequireSectionCode: "섹션을 선택하여 주세요.",
+			editAutoboxToastReload: "갱신되었습니다."
+
+				// 개별기사입력
+				,
+			editboxWriteRequireLink: "기사 링크를 입력하여 주세요.",
+			editboxWriteRequireFrame: "링크타겟이 특정프레임일경우 프레임이름을 입력하여 주세요.",
+			editboxWriteRequireTitle: "제목을 입력하거나 제목이미지를 선택하여 주세요.",
+			editboxWriteRequireSummary: "요약문을 입력하여 주세요.",
+			editboxWriteRequireTitleImg: "제목이미지를 선택하여 주세요."
+
+				// 사진 crop / editor
+				,
+			photoEditorAttachImage: "사진 첨부",
+			photoEditorCropImage: "사진 자르기"
+
+				// 인기검색어
+				,
+			keywordRequire: "인기검색어를 입력하여 주세요.",
+			keywordRequireCount: "조회수를 바르게 입력하여 주세요."
+
+				// 기사전송
+				,
+			transReuireSelectSite: "전송할 제휴사를 선택하여 주세요.",
+			transConfirm: "전송하겠습니까?"
+
+				// 게시판
+				,
+			bbsConfirmEmpty: "해당 게시판을 비우시겠습니까?\n\n복구는 불가능합니다.",
+			bbsRequireBbsName: "게시판명을 입력하여 주세요.",
+			bbsRequireBbsId: "테이블명을 입력하여 주세요.",
+			bbsRequireBbsSkin: "스킨을 선택하여 주세요.",
+			bbsRequireBbsComment: "댓글 스킨을 선택하여 주세요.",
+			bbsRequireBbsUploadNum: "첨부파일 갯수를 입력하여 주세요.",
+			bbsRequireBbsCategory: "카테고리 사용을 선택하였습니다.카테고리를 입력하여 주세요.",
+			bbsConfirmMove: "이동된 게시물은 복구가 불가능하며,\n게시물이 많을 경우 시간이 오래 걸릴수 있으니 화면을 그대로 두시기 바랍니다.\n\n게시판 이동을 하시겠습니까?",
+			bbsRequireSelectSelectBar: "게시판을 선택하여 주세요.",
+			bbsToastEmptied: "게시판을 비웠습니다."
+
+				// 설문
+				,
+			pollRequireWrongDate: "날짜를 바르게 입력하여 주세요.",
+			pollRequireTitle: "설문주제를 입력하여 주세요.",
+			pollRequireQuestions: "투표항목을 모두 입력하여 주세요.",
+			pollRequireEtcTitle: "문항명을 입력하여 주세요.",
+			pollConfirmNowFinish: "설문을 바로 종료하겠습니까?",
+			pollRequireOverMultiAnswers: "복수응답으로 []개까지 가능합니다.",
+			pollRequireWrong: "설문항목을 선택 또는 기입해 주세요.",
+			pollRequireFinished: "종료된 설문입니다."
+
+				// 배너/팝업
+				,
+			bannerRequireDelayTime: "지연시간을 모두 입력해 주세요.",
+			adcRequireLink: "링크를 입력하여 주세요.",
+			adcRequireSelectPopup: "팝업을 선택하여 주세요.",
+			adcRequireMapInfo: "이미지에서 수정할 맵데이타를 선택하여주세요.",
+			adcRequirePopupSize: "팝업창의 크기를 입력하여 주세요.",
+			adcClose: "창닫기",
+			adcNotOpen: "동안 열지않기",
+			adcDay: "하루",
+			adcFinished: "종료된 배너 입니다.",
+			adcEnd: "종료된 배너",
+			adcLater: "노출예정 배너"
+
+				// 광고플로팅 
+				,
+			adcRequireSourceValue: "소스를 입력하여 주세요.",
+			adcRequirePage: "노출할 페이지를 선택하여 주세요."
+
+				// form-제보,투고 등
+				,
+			formDataAgreeCheck: "개인정보 수집 및 이용 사항에 동의해주세요.",
+			formRequireSelect: "다운로드할 폼 이름을 선택하여 주세요."
+
+				// 크레딧등록
+				,
+			creditRequireText: "크레딧을 등록해 주세요.",
+			creditLimitCount: "크레딧을 20개까지만 등록할 수 있습니다."
+
+				// pdf,호수,표지관리
+				,
+			pdfRequireMedianame: "매체명을 입력하여 주세요.",
+			pdfRequireMediaid: "매체아이디를 입력하여 주세요.",
+			pdfRequireLimit: "마지막 판형정보는 삭제할 수 없습니다.",
+			pdfRequireLimitOver: "[]개까지만 등록할 수 있습니다.",
+			pdfRequirePage: "면번호를 입력해 주세요.",
+			pdfRequireSection: "구분을 입력해 주세요.",
+			pdfRequireContent: "주요기사를 입력해 주세요.",
+			pdfRequireFile: "PDF파일을 선택해 주세요.",
+			hosuRequire: "호수를 입력하여 주세요.",
+			hosuRequireDate: "호수일자를 입력하여 주세요.",
+			coverRequireName: "표지명을 입력해 주세요.",
+			coverRequireCode: "코드명을 입력해 주세요.",
+			coverRequireEbookkey: "ebook key를 입력해 주세요.",
+			coverRequirePubdate: "발행일을 입력해 주세요.",
+			coverRequireMainimage: "표지메인 이미지를 선택해 주세요."
+
+				// 광고제어
+				,
+			adctlConfirmUse: "전체사용으로 변경할까요?",
+			adctlConfirmBlock: "전체보류으로 변경할까요?"
+
+				// blog
+				,
+			cfgBlogTypeExplain: "형태를 입력해주세요.",
+			blogRequireRssUrl: "rss 주소를 입력해 주세요.",
+			blogRequireRegOptions: "두가지 방법중 한가지는 등록하여 주세요.",
+			blogRequireSelectKind: "블로그 종류를 선택하여 주세요."
+
+				// 결제
+				,
+			paymentsRequireTitle: "결제타이틀을 입력해주세요.",
+			paymentsRequireModule: "결제모듈을 입력해주세요."
+
+				// mobile
+
+
+				// datepicker
+				,
+			tpRequireReselect: "시간/분을 정확히 선택해주세요."
+
+				,
+			zipRequireWord: "2자이상의 검색어를 입력하여 주세요.",
+			zipRequireCity: "시/도를 선택하세요"
+
+				// 위젯
+				,
+			widgetRequireWidgetId: "위젯을 선택 해주세요.",
+			widgetRequireSkinType: "위젯 스킨 타입을 선택 해주세요.",
+			widgetRequireWidgetSkin: "위젯 스킨을 선택 해주세요.",
+			widgetConfirmMsg: "웹출판시 위젯이 함께 업데이트 됩니다"
+
+				// 회원그룹
+				,
+			usergrpRequireGroupTitle: "그룹명을 입력해주세요."
+
+				// 폼 필드관리
+				,
+			formcfgRequireFieldLabel: "필드 레이블을 입력해주세요.",
+			formcfgRequireFieldId: "필드 아이디를 입력해주세요."
+
+				// 기사 전송 
+				,
+			articleForwardSelectCompany: "기사 전송 제휴사를 선택 해주세요."
+
+				// 뉴스레터 
+				,
+			newsletterSendListReset: "발송대기열을 초기화 하시겠습니까?"
+
+				// 외부 API 회원
+				,
+			oauthPasswordFormInputValid: "설정하실 비밀번호를 입력해주세요.",
+			oauthPasswordFormInputCheck: "설정하실 비밀번호를 확인해주세요.",
+			oauthPasswordFormInputCheckFail: "비밀번호와 확인한 비밀번호가 같지 않습니다."
+
+				// 선거실명제 추가 
+				,
+			articleReplyRegisMobileAccess: "댓글은 PC버전을 이용하여 등록 해주세요.",
+			electionRegisMobileAccess: "선거실명제 운영으로 인해 모바일 버전에서는 글을 등록할 수 없습니다.",
+			electionRegisPostBlock: "선거실명제 운영으로 인해 게시물 작성을 금지합니다.",
+			electionRegisPopupBlock: "차단된 팝업창을 허용해주세요."
+		};
+	</script>
+	<!-- Dable 스크립트 -->
+	<script>
+		/* dable - s */
+		(function (d, a, b, l, e, _) {
+			d[b] = d[b] || function () {
+				(d[b].q = d[b].q || []).push(arguments)
+			};
+			e = a.createElement(l);
+			e.async = 1;
+			e.charset = 'utf-8';
+			e.src = '//static.dable.io/dist/plugin.min.js';
+			_ = a.getElementsByTagName(l)[0];
+			_.parentNode.insertBefore(e, _);
+		})(window, document, 'dable', 'script');
+		dable('setService', (DOMAIN.indexOf(location.host) > 0 ? HOST : M_DOMAIN.replace("http://", "")));
+		/* dable - e */
+
+		// case 1) 기사 상세 페이지에서 로그 남기기
+		dable('sendLog', 'visit');
+	</script>
+
+
+
+	<script type="text/javascript">
+		document.domain = HOST;
+		var ___currentTime = 1536149402 // 현재 시간
+			,
+			___adBlockList = "" // 광고차단매체코드
+			,
+			___vm = new verticalMotion()
+
+		// 슬라이드 페이지 사용시 주석해제 후 사용
+		//,___isSlide = true	//,___endFunc=null										// 클릭,드래그엔드시 리스트 상단 이미지기사 불러오기
+		//,___slideTarget=".mhm_a";									// 링크 걸 타겟
+
+
+		$(function () {
+			mUtil.objectMaxWidth(); // video 태그 부모창에 맞게
+
+			mobile.hiddenTopBar(); // 상단 바 감추기
+			mobile.getScreenInfo(); // 좁은화면인가 넓은 화면인가? 가로,세로화면인가?
+			mobile.evtClickedOpenSearchForm(); // 검색창 열기
+			mobile.evtClickedSlideMenu(); // 메뉴 열기 
+			//mobile.evtClickedSlideMenu2();						// 메뉴 열기, t60일때...
+
+			mobile.evtDefaultSlide(false); // 기본가로/cube 슬라이드-view모드
+			new TabBox().defaultChange(); // 탭박스 이벤트
+
+			mobile.evtClickedArticleList(); // 긴기사일때 접고 펼치기 나오게
+			___vm.exe(); // 가로 슬라이드
+
+			mobile.evtCreateBtnToTop(); // 스크롤시 하단에 top으로 버튼 생성
+
+			banpop.banner(".banner_event_box"); // 기능성배너 이벤트
+
+			/*
+			// 안드로이드 접근시 : 기사본문 페이지는 파일 캐시를 하기 때문에 이처럼 처림
+			if($.inArray("app", [mUtil.linkToJson(location.search.replace("?",""))["refer"],mUtil.getCookie("refer")])>=0){
+				mUtil.setCookie("refer","app",1);
+				$("#btn_android_push").show().find("a").click(function(){ jsconnect.callAndroid(''); return false; });	// 안드로이드 앱 푸시 설정 버튼 
+			}
+			*/
+
+			/*
+			// 메인 슬라이드 페이징 - 사용시 주석해제
+			if(___isSlide){
+				// 슬라이드가 완료된후 사용자 이벤트 등록 - touchend 이벤트 후 실행될 메서드
+				___endFunc=function($target, $slides, idx){
+					var $parents=$target.parent("li")
+						,$slide=$slides.eq(idx)
+						,si = null;
+					$parents.removeClass("on").eq(idx).addClass("on");
+					mobile.evtDefaultSlide(false);	// ajax로 넘어온 데이터에서 slide 찾아 실행
+
+					// 버튼
+					si=setInterval(function(){				
+						$(window).trigger("resize");
+						if($slide.height()>10) clearInterval(si);
+					},10);
+
+					// 슬라이드시 메뉴 따라 움직이게-메뉴가 더 넓을때-필요하면 주석해제 
+					//var cOutWidth=$cmmBox.outerWidth(true),cWidth=$cmMain.outerWidth(true);
+					//if(cOutWidth>cWidth) $cmmBox.animate({"left":(idx>4?cWidth-cOutWidth-10:0)+"px"},300);
+
+					
+					// 배너와 위젯 현재 슬라이드에 복사함
+					mobile.evtSlidePagingCloneBanner($target, $slides, idx);
+					
+				};
+				
+
+				mobile.evtSlidePaging(___slideTarget, "#m_article_box .m_content_box", function($target, $slides, idx, url, params){
+																														// 더보기 링크
+																														//$(this).find(".m_list_btn_more").attr("href", (url+"#PAGE:2")||"#;");
+																														$($slides[idx]).find(".m_list_btn_more").off().attr("href", (url[idx]+"#PAGE:2")||"#;");
+																													}, ___endFunc);
+			}// end ___isSlide
+
+			mobile.evtSlidePagingAfter(); // slide 부속 작업 - 메뉴 구조가 다르다면 커스텀 해줄것 : var index=$(this).parent().index()||0;
+
+			*/
+
+		});
+	</script>
+
+
+
+
+	<script async="" src="./SPOTVNEWS - SPOONFEED_files/f.txt"></script>
+	<script async="async" src="./SPOTVNEWS - SPOONFEED_files/gpt.js"></script>
+	<script>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		googletag.cmd.push(function () {
+
+			googletag.defineSlot('/23600383/spotv_m_spoon_320100', [320, 100], 'div-gpt-ad-1492502059747-0').addService(
+				googletag.pubads()); // 320*100  / spotv_m_spoon_320100 (관련 영상 위)
+			googletag.defineSlot('/23600383/spotv_m_spoon_30250_1', [300, 250], 'div-gpt-ad-1492502142601-0').addService(
+				googletag.pubads()); // 300*250  / spotv_m_spoon_300250_1 (채널 추천 영상 위)
+			googletag.defineSlot('/23600383/spotv_m_spoon_300250_2', [300, 250], 'div-gpt-ad-1492569354653-0').addService(
+				googletag.pubads()); // 300*250  / spotv_m_spoon_300250_2 (에디터 추천 영상 위)
+
+			googletag.pubads().enableSingleRequest();
+			googletag.enableServices();
+		});
+	</script>
+
+
+
+
+
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-85489103-4', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<link rel="preload" href="./SPOTVNEWS - SPOONFEED_files/f(1).txt" as="script">
+	<script type="text/javascript" src="./SPOTVNEWS - SPOONFEED_files/f(1).txt"></script>
+	<link rel="preload" href="./SPOTVNEWS - SPOONFEED_files/f(2).txt" as="script">
+	<script type="text/javascript" src="./SPOTVNEWS - SPOONFEED_files/f(2).txt"></script>
+	<script src="./SPOTVNEWS - SPOONFEED_files/pubads_impl_243.js" async=""></script>
+</head>
+
+<body style="">
+	<div id="check3d" class="check3d">check 3d gpu</div>
+
+	<dl id="skip_content" class="blind">
+		<dt><strong>바로가기</strong></dt>
+		<dd><a href="http://m.spoon.spotvnews.co.kr/#aside">왼쪽 메뉴로 이동</a></dd>
+		<dd><a href="http://m.spoon.spotvnews.co.kr/#content">본문으로 이동</a></dd>
+	</dl>
+
+	<div id="container" class="m_container">
+
+
+		<div id="m_box" class="m_box lo_m12">
+			<!-- 메뉴 -->
+			<div id="m_menu_box" class="lo_m12_1 edit_left slide_leftright m_menu_box">
+
+				<div class="border_box m_menu">
+					<div class="border_box m_menu_header">
+						<svg fill="#fff" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="mm_btn_close"
+						    class="mm_btn_close">
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+							<path d="M0 0h24v24H0z" fill="none"></path>
+						</svg>
+						<img src="./SPOTVNEWS - SPOONFEED_files/new_logo_w.png" height="20" class="valign_middle" style="margin-left:10px">
+					</div>
+
+					<!-- menu list -->
+					<ul id="m_menu_nav" class="no_type border_box m_menu_nav">
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1490930500" class="m_a_full title">스포츠타임</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370177" class="m_a_full title">SPOTV
+								STAR</a>
+						</li>
+
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/#" class="m_a_full title">스포츠</a>
+						</li>
+
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489369693" class="m_a_full">야구</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489369870,1489369889" class="m_a_full">축구</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370048" class="m_a_full">농구</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370015" class="m_a_full">배구</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370067" class="m_a_full">종합격투기</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370081" class="m_a_full">스포츠일반</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370112" class="m_a_full">골프</a>
+						</li>
+
+
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/#" class="m_a_full title">연예</a>
+						</li>
+
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489383589" class="m_a_full">제작
+								발표 현장</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370196" class="m_a_full">쇼케이스
+								현장</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370204" class="m_a_full">연예계
+								핫이슈</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370374" class="m_a_full">스타
+								인터뷰</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489383570" class="m_a_full">스타
+								랭킹쇼</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489370216" class="m_a_full">영화</a>
+						</li>
+
+
+
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1489383606" class="m_a_full title">뷰티/패션</a>
+						</li>
+
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1491362374" class="m_a_full title">라이프</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1491362393" class="m_a_full">여행</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1491362401" class="m_a_full">건강</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1491362433" class="m_a_full">역사</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1491362441" class="m_a_full">생활상식</a>
+						</li>
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleList&amp;sc_code=1491362462" class="m_a_full">일반</a>
+						</li>
+
+
+
+
+
+
+
+						<li class="m_menu_nav_sec1">
+							<a href="http://m.spoon.spotvnews.co.kr/?mod=main&amp;act=goWWW" class="m_a_full title">PC화면</a>
+						</li>
+					</ul>
+				</div>
+
+			</div><!-- //.lo_m12_1 -->
+
+			<!-- 컨텐츠 부분 -->
+			<div id="m_article_box" class="lo_m12_2 edit_right slide_leftright m_article_box">
+
+				<!-- 상단, 검색바 -->
+				<div class="border_box m_header">
+					<button type="button" id="m_header_btn_menu_slide" class="m_icon m_header_btn_menu_slide" title="메뉴">
+						<svg fill="#000000" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"></path>
+							<path d="M0 0h24v24H0z" fill="none"></path>
+						</svg>
+					</button>
+					<a href="http://m.spoon.spotvnews.co.kr/" class="border_box m_header_logo">
+
+						<img src="./SPOTVNEWS - SPOONFEED_files/new_logo_b.png" height="30" class="valign_middle" style="margin-top:-2px;">
+					</a>
+					<button type="button" id="m_header_btn_search" class="m_icon m_header_btn_search" title="검색">
+						<svg fill="#000000" width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+							<path d="M0 0h24v24H0z" fill="none"></path>
+						</svg>
+					</button>
+				</div>
+				<!-- 검색폼 -->
+				<div id="m_search_form" class="border_box slide_updown_height m_search_form">
+
+					<form name="m_search" method="get" action="http://m.spoon.spotvnews.co.kr/" accept-charset="utf-8" onsubmit="return true;">
+						<input type="hidden" name="mod" value="news">
+						<input type="hidden" name="act" value="articleList">
+
+						<input type="hidden" name="sc_code" value="">
+						<input type="hidden" name="sc_area" value="A">
+						<input type="hidden" name="sc_article_type" value="">
+						<input type="hidden" name="sc_view_level" value="">
+						<!--<input type="hidden" name="sc_sdate" value="2017-09-05" /> 
+				<input type="hidden" name="sc_edate" value="2018-09-05" />-->
+						<input type="hidden" name="view_type" value="S"><!-- S:썸네일, T:타일형 -->
+
+						<div class="virtual_table full border_box m_search_form_box">
+							<div class="tr">
+								<div class="td m_search_input_box"><input type="text" name="sc_word" class="m_search_input" required="required"
+									    placeholder="검색어"></div>
+								<div class="td m_search_btn_box"><button type="submit" class="m_bullet mb_250_0 m_search_btn">검색</button></div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+
+
+				<div class="drag_mobile">
+					<div class="edit_inner_content">
+
+					</div>
+				</div>
+				
+				<!-- 컨텐츠 부분(기사편집가능부분) -->
+				<div class="virtual_table resize fixed border_box m_content_box">
+
+
+		
+					<!-- 리액트 비디오 플레이어 -->
+					<div id="container_vod_player" >
+
+					</div>
+					<!-- 키워드 검색 & 리액트 버블차트 스타일링 -->
+					<style>
+
+						#container_search_result {
+							display: none;
+							
+						}
+						#container_search_result p {
+							display: inline-block;
+							margin: 10px 0 0 10px;
+							text-align: left;
+							font-size: 20px;
+						}
+						#container_search_result p i {
+							font-style: normal;
+							font-weight: bold; 
+						}
+						#container_search_result p span {
+							transform: translateY(2px);
+						display: inline-block;
+							padding-top: 5px;
+							font-size: 24px;
+							color: #ffdb3c;
+							font-weight: bold;
+						}
+						
+						
+						/* 검색 결과 닫기 버튼 */
+						#m_header_btn_close {
+							width: 20px;
+							height: 20px;
+							padding: 0;
+						}
+	
+						#m_header_btn_close:hover {
+							cursor: pointer;
+						}
+	
+						#m_header_btn_close svg {
+							display: block;
+						}
+	
+						#m_header_btn_close svg .close-x {
+							stroke: black;
+							fill: transparent;
+							stroke-linecap: round;
+							stroke-width: 4;
+						}
+	
+						/* AI 마크 */
+						.ai_mark {
+							display: inline-block; 
+							right: 5px;
+							font-weight: bold;
+							top: 87px;
+						right: calc(12% - 40px);
+						position: absolute;
+							}
+	
+						.ai_mark img {width: 30px;}
+
+						#container_bubble_chart {
+							background: rgb(0, 0, 0, 0.8);
+						}
+
+						/* 버블 색상 변경 */
+						#container_bubble_chart .node .circle_cover {
+							fill: #eef0f6;
+							font-weight:bolder;
+							opacity: 1;
+						}
+						
+						#container_bubble_chart .node .circle_cover.vod {
+							fill: #ffdb3c;
+						}
+	
+						#container_bubble_chart .node.on .circle_cover {
+							fill: #ffdb3c;
+							opacity: 1;
+						}
+	
+						#container_bubble_chart .node.max .circle_cover {
+							fill: #000;
+							opacity: 0.3;
+						}
+	
+						#container_bubble_chart .node .label-text {
+							fill: #000;
+						}
+	
+						#container_bubble_chart .node.on .label-text {
+							fill: #000;
+						}
+	
+						#container_bubble_chart .node.max .label-text {
+							fill: #fff;
+						}
+	
+						/* 버블차트 폰트 */
+						#container_search_result, #container_bubble_chart {
+							font-family: 'Noto Sans KR', sans-serif;
+						}
+						
+						/* 버블 라벨 텍스트 */
+						.label-text {
+							font-weight: bold;
+						}
+
+
+						/* 비디오 플레이어 버블 */
+						#container_bubble_chart.video .node .circle {
+							fill: transparent!important;
+						}
+						#container_bubble_chart.video .node .circle_cover {
+							fill: #ffdb3c;
+							opacity: 0.5;
+						}
+						#container_bubble_chart.video .node .label-text {
+							fill: #fff;
+						}
+
+					</style>	
+
+
+
+
+					<div class="tr resize">
+						<!-- 중앙 기사 컨텐츠 -->
+						<div class="td resize border_box m_content">
+
+
+
+							<div class="drag_mobile">
+								<div class="edit_inner_content">
+									<div class="border_box virtual_table full m_box_1_border_none">
+										<div class="tr">
+											<div class="td">
+												<div class="virtual_table full" id="edit_box_content_553">
+													<div class="tr">
+														<div class="td edit_box_title">
+															<div class="border_box align_left virtual_table full fixed">
+																<div class="tr">
+																	<div class="td">
+																		<div class="border_box template_skin_235">
+
+																			<ul class="border_box no_type ts_box">
+
+																				<li class="ts_list">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45512" target="_self"
+																					    class="ts_a">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45512_45373_3336_132.jpg" alt="[PL] &#39;인싸&#39;되는 지름길…델리 알리의 세리머니 강좌"
+																						    class="ts_img">
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">[PL] '인싸'되는 지름길…델리 알리의 세리머니 강좌</h6>
+																					</a>
+																				</li>
+
+																			</ul>
+																		</div>
+																		<div style="height:2px;"></div>
+																		<div id="___ts_1654070" class="border_box m_slide_horizon m_not_height template_skin_212"
+																		    data-is-slide="1">
+																			<button type="button" class="m_slide_horizon_btn_prev ts_btn ts_prev">이전</button>
+
+																			<ul class="border_box no_type m_slide_horizon_box ts_box">
+
+																				<li class="m_slide_horizon_list ts_list selected" style="display: list-item; transform: translate3d(0px, 0px, 0px); opacity: 1; z-index: 2;">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45510" target="_self"
+																					    class="ts_a">
+
+																						<p class="ts_img_box"><img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45510_45371_3336_133.jpg" alt="[PL] &#39;또 폭발&#39; 무리뉴 &quot;내가 세상에서 제일 위대한 감독이야&quot;"
+																							    class="ts_img"></p>
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">[PL] '또 폭발' 무리뉴 "내가 세상에서 제일 위대한 감독이야"</h6>
+
+																					</a>
+																				</li>
+
+																				<li class="m_slide_horizon_list ts_list" style="display: list-item; transform: translate3d(100%, 0px, 0px); opacity: 0; z-index: 1;">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45509" target="_self"
+																					    class="ts_a" tabindex="-1">
+
+																						<p class="ts_img_box"><img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45509_45370_4604_133.jpg" alt="[국가대표] AG 금메달, 김학범호 귀국 현장 (스포츠타임)"
+																							    class="ts_img"></p>
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">[국가대표] AG 금메달, 김학범호 귀국 현장 (스포츠타임)</h6>
+
+																					</a>
+																				</li>
+
+																				<li class="m_slide_horizon_list ts_list" style="display: list-item; transform: translate3d(100%, 0px, 0px); opacity: 0; z-index: 1;">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45508" target="_self"
+																					    class="ts_a" tabindex="-1">
+
+																						<p class="ts_img_box"><img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45508_45369_4603_133.jpg" alt="[해외축구] 리버풀 떠난 카리우스, 베식타스 데뷔전서 치명적 실수 (스포츠타임)"
+																							    class="ts_img"></p>
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">[해외축구] 리버풀 떠난 카리우스, 베식타스 데뷔전서 치명적 실수 (스포츠타임)</h6>
+
+																					</a>
+																				</li>
+
+																				<li class="m_slide_horizon_list ts_list" style="display: list-item; transform: translate3d(100%, 0px, 0px); opacity: 0; z-index: 1;">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45507" target="_self"
+																					    class="ts_a" tabindex="-1">
+
+																						<p class="ts_img_box"><img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45507_45368_1627_133.jpg" alt="[국가대표] 파울루 벤투 감독, 부임 후 첫 훈련 (스포츠타임)"
+																							    class="ts_img"></p>
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">[국가대표] 파울루 벤투 감독, 부임 후 첫 훈련 (스포츠타임)</h6>
+
+																					</a>
+																				</li>
+
+																				<li class="m_slide_horizon_list ts_list" style="display: list-item; transform: translate3d(100%, 0px, 0px); opacity: 0; z-index: 1;">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45505" target="_self"
+																					    class="ts_a" tabindex="-1">
+
+																						<p class="ts_img_box"><img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45505_45366_1626_133.jpg" alt="[UFC] 알 아이아퀸타는 하빕 누르마고메도프의 26승 제물 (스포츠타임)"
+																							    class="ts_img"></p>
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">[UFC] 알 아이아퀸타는 하빕 누르마고메도프의 26승 제물 (스포츠타임)</h6>
+
+																					</a>
+																				</li>
+																			</ul>
+
+																			<button type="button" class="m_slide_horizon_btn_next ts_btn ts_next">다음</button>
+																		</div>
+																		<script type="text/javascript">
+																			//mUtil.autoSlide("#___ts_1654070");
+																		</script>
+																		<div style="height:20px;"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="border_box virtual_table full box_141">
+										<div class="tr">
+											<div class="td">
+												<div class="virtual_table full" id="edit_box_content_549">
+													<div class="tr">
+														<div class="td edit_box_title">
+															<div class="border_box align_left virtual_table full fixed"><span class="tab_no_button">TOP100 인기영상</span>
+																<div class="tr">
+																	<div class="td">
+																		<div style="height:10px;"></div>
+																		<div class="height_auto border_box template_skin_234">
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45499" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45499_45360_3924_125.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[NBA] '아쉬움의 대명사' 그랜트 힐 커리어 TOP 플레이 ②</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45509" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45509_45370_4604_125.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[국가대표] AG 금메달, 김학범호 귀국 현장 (스포츠타임)</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45504" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45504_45365_1626_125.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[MLB] 카드뉴스-LA다저스 3연속 역전승 (스포츠타임)</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45523" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45523_45384_0955_125.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[NBA] '패싱 머신' 제이슨 키드, 노 룩 패스 TOP 10</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45522" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list last">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45522_45383_0955_125.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[NBA] '트리플더블러' 제이슨 키드, 바운스 패스 TOP 10</h6>
+
+																				</div>
+																			</a>
+
+
+																		</div>
+																		<div style="height:20px;"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="border_box virtual_table full box_141">
+										<div class="tr">
+											<div class="td">
+												<div class="virtual_table full" id="edit_box_content_550">
+													<div class="tr">
+														<div class="td edit_box_title">
+															<div class="border_box align_left virtual_table full fixed"><span class="tab_no_button">SPORTS</span>
+																<div class="tr">
+																	<div class="td">
+																		<div class="border_box template_skin_235">
+
+																			<ul class="border_box no_type ts_box">
+
+																				<li class="ts_list">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45512" target="_self"
+																					    class="ts_a">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45512_45373_3336_126.jpg" alt="[PL] &#39;인싸&#39;되는 지름길…델리 알리의 세리머니 강좌"
+																						    class="ts_img">
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">[PL] '인싸'되는 지름길…델리 알리의 세리머니 강좌</h6>
+																					</a>
+																				</li>
+
+																			</ul>
+																		</div>
+																		<div style="height:10px;"></div>
+																		<div class="height_auto border_box template_skin_234">
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45512" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45512_45373_3336_127.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[PL] '인싸'되는 지름길…델리 알리의 세리머니 강좌</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45499" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45499_45360_3924_127.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[NBA] '아쉬움의 대명사' 그랜트 힐 커리어 TOP 플레이 ②</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45514" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list last">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45514_45375_3919_127.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[NBA] '제대로 눈정화', 2018시즌 최고의 플레이 ②</h6>
+
+																				</div>
+																			</a>
+
+
+																		</div>
+																		<div style="height:20px;"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="border_box virtual_table full box_141">
+										<div class="tr">
+											<div class="td">
+												<div class="virtual_table full" id="edit_box_content_551">
+													<div class="tr">
+														<div class="td edit_box_title">
+															<div class="border_box align_left virtual_table full fixed"><span class="tab_no_button">ENT</span>
+																<div class="tr">
+																	<div class="td">
+																		<div class="border_box template_skin_235">
+
+																			<ul class="border_box no_type ts_box">
+
+																				<li class="ts_list">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45545" target="_self"
+																					    class="ts_a">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45545_45406_4859_128.jpg" alt="더보이즈(THE BOYZ)의 순수함과 열정이 담긴 수록곡 &#39;L.O.U&#39; (쇼케이스)"
+																						    class="ts_img">
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">더보이즈(THE BOYZ)의 순수함과 열정이 담긴 수록곡 'L.O.U' (쇼케이스)</h6>
+																					</a>
+																				</li>
+
+																			</ul>
+																		</div>
+																		<div style="height:10px;"></div>
+																		<div class="height_auto border_box template_skin_234">
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45544" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45544_45405_4858_129.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">더보이즈(THE BOYZ)의 강력한 에너지를 담은 타이틀곡 'Right Here' (...</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45547" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45547_45408_4918_129.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">'청담Key친' 아이돌의 고민 상담사 샤이니(SHINee) 키, 그 비결은?</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=45546" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list last">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_45546_45407_4918_129.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">'청담Key친' 샤이니(SHINee) 키가 초대하고 싶은 지인은?</h6>
+
+																				</div>
+																			</a>
+
+
+																		</div>
+																		<div style="height:20px;"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="border_box virtual_table full box_141">
+										<div class="tr">
+											<div class="td">
+												<div class="virtual_table full" id="edit_box_content_552">
+													<div class="tr">
+														<div class="td edit_box_title">
+															<div class="border_box align_left virtual_table full fixed"><span class="tab_no_button">BEAUTY &amp;
+																	FASHION</span>
+																<div class="tr">
+																	<div class="td">
+																		<div class="border_box template_skin_235">
+
+																			<ul class="border_box no_type ts_box">
+
+																				<li class="ts_list">
+																					<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=37401" target="_self"
+																					    class="ts_a">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_37401_37262_0529_130.jpg" alt="오늘도 이쁘지효, 송지효의 뷰·라 (제작발표회)"
+																						    class="ts_img">
+																						<span class="ts_play"></span>
+																						<h6 class="border_box ellipsis ts_title">오늘도 이쁘지효, 송지효의 뷰·라 (제작발표회)</h6>
+																					</a>
+																				</li>
+
+																			</ul>
+																		</div>
+																		<div style="height:10px;"></div>
+																		<div class="height_auto border_box template_skin_234">
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=37394" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_37394_37255_0537_131.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">오늘도 이쁘지효,송지효의 뷰·라 (제작발표회)</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=37393" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list ">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_37393_37254_0537_131.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">음주운전 자숙 9개월 만에 복귀하는 구재이 고개 숙여 사과 (제작발표회)</h6>
+
+																				</div>
+																			</a>
+
+
+																			<a href="http://m.spoon.spotvnews.co.kr/?mod=news&amp;act=articleView&amp;idxno=11731" target="_self"
+																			    class="ts_a">
+																				<div class="height_auto ts_list last">
+
+																					<p class="ts_p">
+																						<img src="./SPOTVNEWS - SPOONFEED_files/PHOTO_11731_11728_2728_131.jpg" class="ts_img" onerror="this.parentNode.style.display=&#39;none&#39;;">
+																						<span class="ts_play">play</span> </p>
+																					<h6 class="ts_title">[뷰티풀.ver] 4개국 인기 메이크업 - 1. 한국</h6>
+
+																				</div>
+																			</a>
+
+
+																		</div>
+																		<div style="height:20px;"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<!-- 오른쪽 기사 컨텐츠 - 가변 -->
+						<div class="td resize border_box m_aside">
+
+							<div class="drag_mobile">
+								<div class="edit_inner_content">
+
+								</div>
+							</div>
+						</div>
+					</div><!-- //.tr -->
+
+				</div><!-- //.m_content_box -->
+
+
+
+				<div class="drag_mobile">
+					<div class="edit_inner_content">
+
+					</div>
+				</div>
+
+				<!-- 하단 -->
+				<div class="m_footer">
+
+
+					<a href="http://spoon.spotvnews.co.kr/?mod=main&amp;act=goWWW" class="btn_bg btn_bg_830"><span class="btn_bg btn_bg_in">PC화면</span></a>
+
+					<div class="height_auto mf_copy">
+						<span class="float_left">COPYRIGHT © SPOTVNEWS - SPOONFEED ALL RIGHTS RESERVED.</span>
+						<span class="float_right"><a href="http://www.ndsoft.co.kr/" target="_blank"><img src="./SPOTVNEWS - SPOONFEED_files/ndsoft.png"
+								    class="mf_img"></a></span>
+					</div>
+				</div>
+
+
+
+				<div class="drag_mobile">
+					<div class="edit_inner_content">
+
+					</div>
+				</div>
+
+			</div><!-- //.lo_m12_2 -->
+		</div><!-- //.lo_m12 -->
+
+	</div><!-- // #container -->
+
+
+	<button type="button" id="m_scroll_top" class="m_scroll_top">to top</button>
+	<!-- <script src="http://localhost:8888/bundle.js"></script> -->
+	<!-- <script src="http://localhost:7777/bundle.js"></script> -->
+	
+	<script src="./player.js"></script>
+	<script src="./bubble.js"></script>
+	
+</body>
+
+</html>

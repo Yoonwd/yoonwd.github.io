@@ -1,0 +1,39 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.item {
+	position: relative;
+	width: 100%;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+
+.label {
+	word-break: keep-all;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 13px;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	width: 100%;
+	white-space: normal;
+	line-height: 1.2;
+	max-height: 2.4em;
+	word-wrap: break-word;
+ display: -webkit-box;
+ -webkit-line-clamp: 2;
+ -webkit-box-orient: vertical;
+}
+
+
+
